@@ -52,6 +52,55 @@ table {
     Change it to however you want it to be. Don't forget to import
     the url in this file as well
 */
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Bangers", cursive;
+  color: #0F4770; }
+
+h1 {
+  font-size: 3.1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: .15rem;
+  margin: 0 0 0.4em; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4rem; } }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  margin: 1em 0; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 2.5rem;
+      margin: 1em 0 1.4em; } }
+
+section > h2::before {
+  /* number before each section title */
+  color: #c3b703; }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #1e8ee0; }
+  p a {
+    color: #FF3A20;
+    text-decoration: underline; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
+
 .cd-primary-nav {
   margin: 1.5rem 0; }
 
@@ -89,28 +138,6 @@ table {
     border-right: none; }
     .cd-primary-nav li:last-child {
       border-right: 3px solid black; } }
-/* -------------------------------- 
-
-xBackground 
-
--------------------------------- */
-body {
-  /* this is the page background */
-  background-color: #FEFEFE; }
-
-/* -------------------------------- 
-
-xPatterns
-
--------------------------------- */
-.cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #FBED18;
-  border-radius: 3px;
-  background: #FEFEFE;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px; }
-
 /* -------------------------------- 
 
 xNavigation 
@@ -171,6 +198,28 @@ header {
 
 /* -------------------------------- 
 
+xBackground 
+
+-------------------------------- */
+body {
+  /* this is the page background */
+  background-color: #FEFEFE; }
+
+/* -------------------------------- 
+
+xPatterns
+
+-------------------------------- */
+.cd-box {
+  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+  border: 1px solid #FBED18;
+  border-radius: 3px;
+  background: #FEFEFE;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding: 6px; }
+
+/* -------------------------------- 
+
 xPage title 
 
 -------------------------------- */
@@ -180,55 +229,6 @@ main > h1 {
     main > h1 {
       /* title goes into the header on big devices */
       color: #FEFEFE; } }
-
-/* -------------------------------- 
-
-xTypography 
-
--------------------------------- */
-h1,
-h2 {
-  font-family: "Bangers", cursive;
-  color: #0F4770; }
-
-h1 {
-  font-size: 3.1rem;
-  font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: .15rem;
-  margin: 0 0 0.4em; }
-  @media only screen and (min-width: 768px) {
-    h1 {
-      font-size: 3.2rem; } }
-  @media only screen and (min-width: 1024px) {
-    h1 {
-      font-size: 4rem; } }
-
-h2 {
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .15rem;
-  margin: 1em 0; }
-  @media only screen and (min-width: 768px) {
-    h2 {
-      font-size: 2.5rem;
-      margin: 1em 0 1.4em; } }
-
-section > h2::before {
-  /* number before each section title */
-  color: #c3b703; }
-
-p {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  color: #1e8ee0; }
-  p a {
-    color: #FF3A20;
-    text-decoration: underline; }
-  @media only screen and (min-width: 768px) {
-    p {
-      font-size: 1.6rem;
-      line-height: 1.6; } }
 
 /* -------------------------------- 
 

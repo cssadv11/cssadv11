@@ -1,0 +1,115 @@
+.cd-primary-nav li {
+    position: relative;
+    background-color: $color-4;
+    padding: 1rem;
+    width: 95%;
+
+    &:hover {
+        background-color: rgba($color-4, .5)
+    }
+}
+
+.cd-primary-nav li:nth-child(odd) {
+    margin: 1rem 5rem 1rem 0;
+    left: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-top: 30px solid transparent;
+        border-left: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+        border-right: 30px solid #fff;
+    }
+
+    
+}
+
+.cd-primary-nav li:nth-child(even) {
+    margin: 1rem 0 1rem 5rem;
+    right: 2.5rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-top: 30px solid transparent;
+        border-left: 30px solid #fff;
+        border-bottom: 30px solid transparent;
+        border-right: 30px solid transparent;
+    }
+
+    a {
+        text-align: left;
+        margin-left: 5rem;
+    }
+}
+
+.cd-primary-nav a {
+    font-family: $secondary-font;
+    font-size: 3rem;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin-right: 5rem;
+    
+    &::first-letter {
+        color: $color-1;
+        font-size: 4rem;
+    }
+}
+
+@include MQ(S){
+    .cd-primary-nav li {
+        width: 50%;
+
+        a {
+            text-align: center;
+            margin: auto;
+    
+        }
+    }
+
+    .cd-primary-nav li:nth-child(odd) {
+        margin: 1rem 0;
+        left: 0;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top: 30px solid transparent;
+            border-left: 30px solid #fff;
+            border-bottom: 30px solid transparent;
+            border-right: 30px solid transparent;
+        }
+    
+        
+    }
+    
+    .cd-primary-nav li:nth-child(even) {
+        margin: 1rem 0;
+        right: 0;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-top: 30px solid transparent;
+            border-left: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            border-right: 30px solid #fff;
+        }
+
+        a {
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+}

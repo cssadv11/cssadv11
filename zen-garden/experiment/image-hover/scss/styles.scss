@@ -42,6 +42,7 @@ header h2{
 	padding: 3rem 2rem;
 	background-image: url(luffy.jpg);
 	background-size: 1350px;
+	background-attachment: scroll;
 	clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0);
 
 	&:hover {

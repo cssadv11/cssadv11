@@ -216,308 +216,308 @@ header h2 {
 /******************** 320px upto 480px ***************************/
 .summary {
   background-image: url(luffy-png.png);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .preamble p:nth-of-type(1) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .preamble p:nth-of-type(2) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .preamble p:nth-of-type(3) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .explanation p:nth-of-type(1) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .explanation p:nth-of-type(2) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .participation p:nth-of-type(1) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .participation p:nth-of-type(2) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .participation p:nth-of-type(3) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .benefits p {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .requirements p:nth-of-type(1) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .requirements p:nth-of-type(2) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .requirements p:nth-of-type(3) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .requirements p:nth-of-type(4) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 .requirements p:nth-of-type(5) {
   background-image: url(luffy.jpg);
-  background-size: 1350px; }
+  background-size: 480px; }
 
 /******************** 480px upto 768px ***************************/
 @media only screen and (min-width: 480px) {
   .summary {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .preamble p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .preamble p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .preamble p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .explanation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .explanation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .participation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .participation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .participation p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .benefits p {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .requirements p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .requirements p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .requirements p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .requirements p:nth-of-type(4) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 768px; }
 
   .requirements p:nth-of-type(5) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; } }
+    background-size: 768px; } }
 /******************** 768px upto 1024px **************************/
 @media only screen and (min-width: 768px) {
   .summary {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .preamble p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .preamble p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .preamble p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .explanation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .explanation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .participation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .participation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .participation p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .benefits p {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .requirements p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .requirements p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .requirements p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .requirements p:nth-of-type(4) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1024px; }
 
   .requirements p:nth-of-type(5) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; } }
+    background-size: 1024px; } }
 /******************** 1024px upto 1600px **************************/
 @media only screen and (min-width: 1024px) {
   .summary {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .preamble p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .preamble p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .preamble p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .explanation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .explanation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .participation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .participation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .participation p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .benefits p {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .requirements p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .requirements p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .requirements p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .requirements p:nth-of-type(4) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: 1600px; }
 
   .requirements p:nth-of-type(5) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; } }
+    background-size: 1600px; } }
 /******************** 1600px and up **************************/
 @media only screen and (min-width: 1600px) {
   .summary {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .preamble p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .preamble p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .preamble p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .explanation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .explanation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .participation p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .participation p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .participation p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .benefits p {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .requirements p:nth-of-type(1) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .requirements p:nth-of-type(2) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .requirements p:nth-of-type(3) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .requirements p:nth-of-type(4) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; }
+    background-size: cover; }
 
   .requirements p:nth-of-type(5) {
     background-image: url(luffy.jpg);
-    background-size: 1350px; } }
+    background-size: cover; } }
 /******************************************************************
 		    End Styles for changing background on hover
 ******************************************************************/

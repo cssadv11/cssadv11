@@ -216,8 +216,7 @@ header h2 {
 /******************** 320px upto 480px ***************************/
 .summary {
   background-image: url(luffy-png.png);
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: 1350px; }
 
 .preamble p:nth-of-type(1) {
   background-image: url(luffy.jpg);
@@ -276,98 +275,66 @@ header h2 {
   background-size: 1350px; }
 
 /******************** 480px upto 768px ***************************/
-/*
-@include MQ(XS) {
+@media only screen and (min-width: 480px) {
+  .summary {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	// Summary
+  .preamble p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.summary {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .preamble p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	// Preamble paragraph tags
+  .preamble p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.preamble p:nth-of-type(1) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .explanation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.preamble p:nth-of-type(2) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .explanation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.preamble p:nth-of-type(3) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .participation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	// Explanation paragraph tags
+  .participation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.explanation p:nth-of-type(1) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .participation p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.explanation p:nth-of-type(2) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .benefits p {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	// Participation paragraph tags
+  .requirements p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.participation p:nth-of-type(1) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .requirements p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.participation p:nth-of-type(2) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .requirements p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	.participation p:nth-of-type(3) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
+  .requirements p:nth-of-type(4) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
 
-	// Benefits Paragraph tag
-
-	.benefits p {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
-
-	// Requirements paragraph tags
-
-	.requirements p:nth-of-type(1) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
-
-	.requirements p:nth-of-type(2) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
-
-	.requirements p:nth-of-type(3) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
-
-	.requirements p:nth-of-type(4) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}
-
-	.requirements p:nth-of-type(5) {
-		background-image: url(luffy.jpg);
-		background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
-	}	
-
-}
-
+  .requirements p:nth-of-type(5) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; } }
 /******************** 768px upto 1024px **************************
 
 @include MQ(S) {

@@ -115,7 +115,7 @@ header h2{
 // Summary
 
 .summary {
-	background-image: url(luffy.jpg);
+	background-image: url(luffy-png.png);
 	background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
 }
 
@@ -201,7 +201,7 @@ header h2{
 
 
 /******************** 480px upto 768px ***************************/
-
+/*
 @include MQ(XS) {
 
 	// Summary
@@ -293,7 +293,7 @@ header h2{
 
 }
 
-/******************** 768px upto 1024px ***************************/
+/******************** 768px upto 1024px **************************
 
 @include MQ(S) {
 
@@ -386,7 +386,7 @@ header h2{
 
 }
 
-/******************** 1024px upto 1600px ***************************/
+/******************** 1024px upto 1600px **************************
 
 @include MQ(M) {
 
@@ -479,7 +479,7 @@ header h2{
 
 }
 
-/******************** 1600px and up ***************************/
+/******************** 1600px and up **************************
 
 @include MQ(L) {
 
@@ -572,7 +572,7 @@ header h2{
 
 }
 
-
+*/
 /******************************************************************
 		    End Styles for changing background on hover
 ******************************************************************/

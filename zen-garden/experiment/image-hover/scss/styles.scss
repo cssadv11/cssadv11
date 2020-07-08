@@ -116,7 +116,9 @@ header h2{
 
 .summary {
 	background-image: url(luffy-png.png);
-	background-size: 1350px; // Change according to viewport size. Use Photoshop and MQs
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	background-repeat: no-repeat;
+	
 }
 
 // Preamble paragraph tags

@@ -216,7 +216,8 @@ header h2 {
 /******************** 320px upto 480px ***************************/
 .summary {
   background-image: url(luffy-png.png);
-  background-size: 1350px; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .preamble p:nth-of-type(1) {
   background-image: url(luffy.jpg);

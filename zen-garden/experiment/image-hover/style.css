@@ -147,28 +147,384 @@ header h2 {
   margin: 0;
   font-size: 2.5rem; }
 
-.summary, .explanation p, .benefits p {
+/******************************************************************
+			Styles for changing background on hover
+******************************************************************/
+.summary, .explanation p, .benefits p, .preamble p, .participation p, .requirements p {
   position: relative;
   color: transparent;
-  margin: 1rem;
-  padding: 3rem 2rem;
-  background-image: url(luffy.jpg);
-  background-size: 1350px;
   background-attachment: scroll;
-  clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0); }
-  .summary:hover, .explanation p:hover, .benefits p:hover {
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s; }
+  .summary:hover, .explanation p:hover, .benefits p:hover, .preamble p:hover, .participation p:hover, .requirements p:hover {
     color: #fff;
-    z-index: 1; }
+    z-index: 1;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s; }
 
-.explanation p:hover::after {
+.summary:hover::after, .explanation p:hover::after, .benefits p:hover::after, .preamble p:hover::after, .participation p:hover::after, .requirements p:hover::after {
   content: "";
   position: absolute;
-  left: 0;
-  top: -1rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #121212;
-  width: 1316px;
-  height: 300px;
-  z-index: -1; }
+  width: 110%;
+  height: 110%;
+  z-index: -1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+
+.summary p, .summary a {
+  color: transparent;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s; }
+
+.summary:hover p {
+  color: #fff;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+.summary:hover a {
+  color: #FF3A20;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+
+.participation a, .requirements a {
+  color: transparent;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  transition: all 0.25s; }
+.participation p:hover a, .requirements p:hover a {
+  color: #FF3A20;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+
+/******************************************************************
+	 Change the image background here so they can be different
+******************************************************************/
+/******************** 320px upto 480px ***************************/
+.summary {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.preamble p:nth-of-type(1) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.preamble p:nth-of-type(2) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.preamble p:nth-of-type(3) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.explanation p:nth-of-type(1) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.explanation p:nth-of-type(2) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.participation p:nth-of-type(1) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.participation p:nth-of-type(2) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.participation p:nth-of-type(3) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.benefits p {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.requirements p:nth-of-type(1) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.requirements p:nth-of-type(2) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.requirements p:nth-of-type(3) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.requirements p:nth-of-type(4) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+.requirements p:nth-of-type(5) {
+  background-image: url(luffy.jpg);
+  background-size: 1350px; }
+
+/******************** 480px upto 768px ***************************/
+@media only screen and (min-width: 480px) {
+  .summary {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .benefits p {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(4) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(5) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; } }
+/******************** 768px upto 1024px ***************************/
+@media only screen and (min-width: 768px) {
+  .summary {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .benefits p {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(4) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(5) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; } }
+/******************** 1024px upto 1600px ***************************/
+@media only screen and (min-width: 1024px) {
+  .summary {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .benefits p {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(4) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(5) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; } }
+/******************** 1600px and up ***************************/
+@media only screen and (min-width: 1600px) {
+  .summary {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .preamble p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .explanation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .participation p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .benefits p {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(1) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(2) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(3) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(4) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; }
+
+  .requirements p:nth-of-type(5) {
+    background-image: url(luffy.jpg);
+    background-size: 1350px; } }
+/******************************************************************
+		    End Styles for changing background on hover
+******************************************************************/
+.summary {
+  margin: 1rem;
+  padding: 3rem 2rem;
+  clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0); }
 
 .preamble p:nth-of-type(1), .participation p:nth-of-type(1) {
   margin: 1rem;

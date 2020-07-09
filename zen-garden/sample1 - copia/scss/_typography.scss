@@ -1,0 +1,83 @@
+/*
+    The primary font variable is the font that adjusts the body text
+
+    Change it to however you want it to be. Don't forget to import
+    the url in this file as well
+*/
+
+// Store the fonts in here
+
+@import url('https://fonts.googleapis.com/css?family=Bangers|Happy+Monkey');
+
+
+$primary-font: 'Happy Monkey';
+$secondary-font: 'Bangers', cursive;;
+
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+
+h1,
+h2 {
+  font-family: $secondary-font;
+
+}
+
+h1 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .15rem;
+  margin: 0 0 0.4em;
+  text-shadow: -2.5px -2.5px black, 2.5px 2.5px black,  3.5px 3.5px black;
+  color: $color-1;
+
+
+
+  @include MQ(S) {
+    font-size: 3.2rem;
+  }
+
+  @include MQ(M) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  margin: 1em 0;
+  text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+  color: $color-3;
+
+  abbr {
+    text-shadow: -2px -2px black, 1px 1px yellow,  2px 2px orange;
+    color: $color-1;
+  }
+  @include MQ(S) {
+    font-size: 2.5rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: lighten($color-3, 25%);
+  
+
+  a {
+    color: $color-1;
+    text-decoration: underline;
+    font-family: $primary-font;
+  }
+
+  @include MQ(S) {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}

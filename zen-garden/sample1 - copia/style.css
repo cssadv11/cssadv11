@@ -1,0 +1,640 @@
+/*
+    The primary font variable is the font that adjusts the body text
+
+    Change it to however you want it to be. Don't forget to import
+    the url in this file as well
+*/
+@import url("https://fonts.googleapis.com/css?family=Bangers|Happy+Monkey");
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Bangers", cursive;
+}
+
+h1 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.15rem;
+  margin: 0 0 0.4em;
+  text-shadow: -2.5px -2.5px black, 2.5px 2.5px black, 3.5px 3.5px black;
+  color: #FF3A20;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin: 1em 0;
+  text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+  color: #FEFEFE;
+}
+h2 abbr {
+  text-shadow: -2px -2px black, 1px 1px yellow, 2px 2px orange;
+  color: #FF3A20;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: white;
+}
+p a {
+  color: #FF3A20;
+  text-decoration: underline;
+  font-family: "Happy Monkey";
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
+.design-selection nav li {
+  position: relative;
+  background-color: #121212;
+  color: #FBED18;
+  padding: 1rem;
+  width: 90%;
+  list-style: none;
+}
+.design-selection nav li:hover {
+  background-color: rgba(18, 18, 18, 0.5);
+}
+
+.design-selection nav li:nth-child(odd) {
+  margin: 1rem 0;
+  left: -3rem;
+}
+.design-selection nav li:nth-child(odd)::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  border: 45px solid transparent;
+  border-right: 45px solid #fff;
+}
+
+.design-selection nav li:nth-child(even) {
+  margin: 1rem 0;
+  right: 0;
+  text-align: right;
+}
+.design-selection nav li:nth-child(even)::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  border: 45px solid transparent;
+  border-left: 45px solid #fff;
+}
+.design-selection nav li:nth-child(even) a {
+  text-align: right;
+}
+
+nav a {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  color: #FBED18;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+nav a::first-letter {
+  color: #FF3A20;
+  font-size: 2rem;
+}
+nav a:nth-child(2) {
+  display: inline;
+}
+
+.design-archives ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.design-archives ul li {
+  list-style: none;
+  padding: 1rem;
+  background-color: #121212;
+}
+.design-archives ul li:nth-child(1) {
+  margin-right: 2rem;
+}
+.design-archives ul li:nth-child(2) {
+  margin-left: 2rem;
+}
+.design-archives ul li:nth-child(2) a {
+  text-align: right;
+}
+
+@media only screen and (min-width: 480px) {
+  .design-selection nav li {
+    width: 95%;
+  }
+
+  .design-selection nav li:nth-child(odd)::after {
+    border: 47px solid transparent;
+    border-right: 47px solid #fff;
+  }
+
+  .design-selection nav li:nth-child(even)::after {
+    border: 47px solid transparent;
+    border-left: 47px solid #fff;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .design-selection nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+  .design-selection nav ul li {
+    width: 80%;
+    text-align: center;
+  }
+  .design-selection nav ul li a {
+    text-align: center;
+  }
+  .design-selection nav ul li:nth-child(odd) {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .design-selection nav ul li:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    border: 47px solid transparent;
+    border-left: 47px solid #fff;
+  }
+  .design-selection nav ul li:nth-child(even) {
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .design-selection nav ul li:nth-child(even) a {
+    text-align: center;
+  }
+  .design-selection nav ul li:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: 0;
+    border: 47px solid transparent;
+    border-right: 47px solid #fff;
+  }
+}
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+body {
+  background-color: #FEFEFE;
+  font-size: 1.1rem;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: "Happy Monkey";
+}
+
+nav li {
+  font-family: "Happy Monkey";
+}
+
+.summary, .explanation p, .benefits p {
+  margin: 1rem;
+  padding: 3rem 2rem;
+  background-color: #121212;
+  clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0);
+}
+
+.preamble p:nth-of-type(1), .participation p:nth-of-type(1) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 3rem;
+  background-color: #121212;
+  clip-path: polygon(50% 96%, 100% 100%, 100% 0, 0 0, 0 100%);
+}
+
+.preamble p:nth-of-type(2), .participation p:nth-of-type(2) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0% 95%, 0% 5%);
+}
+
+.preamble p:nth-of-type(3), .participation p:nth-of-type(3) {
+  margin: 1rem;
+  padding: 3.5rem 2rem 2rem;
+  background-color: #121212;
+  clip-path: polygon(0 0, 50% 4%, 100% 0, 100% 100%, 0 100%);
+}
+
+.explanation p:nth-of-type(1) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%, 0% 100%);
+}
+
+.explanation p:nth-of-type(2) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(100% 0%, 0% 5%, 0% 95%, 100% 100%, 100% 100%);
+}
+
+.requirements p:nth-of-type(1) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%, 0% 100%);
+}
+
+.requirements p:nth-of-type(2) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(100% 0%, 0% 3.5%, 0% 96.5%, 100% 100%, 100% 100%);
+}
+
+.requirements p:nth-of-type(3) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(0% 0%, 100% 6.5%, 100% 93.5%, 0% 100%, 0% 100%);
+}
+
+.requirements p:nth-of-type(4) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(100% 0%, 0% 5%, 0% 100%, 50% 95%, 100% 100%);
+}
+
+.requirements p:nth-of-type(5) {
+  margin: 1rem;
+  padding: 3rem 2rem;
+  background-color: #121212;
+  clip-path: polygon(0 10%, 50% 0%, 100% 10%, 100% 100%, 0% 100%, 0% 100%);
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
+  position: relative;
+  background-color: #FBED18;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Bangers", cursive;
+  font-size: 1rem;
+  color: black;
+  letter-spacing: 1.5px;
+}
+.preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
+  color: #FF3A20;
+  font-size: 1.5rem;
+}
+.preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  border: 30px solid transparent;
+  border-left: 30px solid #FEFEFE;
+}
+.preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  border: 30px solid transparent;
+  border-right: 30px solid #FEFEFE;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  width: 80px;
+  padding: 1rem 0.5rem;
+  background-color: #121212;
+  text-decoration: none;
+  text-align: center;
+  color: #FEFEFE;
+}
+
+.zen-resources ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.zen-resources ul li {
+  list-style: none;
+  padding: 1.5rem 0.75rem;
+  background-color: #121212;
+  border: 1px solid #FEFEFE;
+}
+.zen-resources ul li a {
+  color: #FEFEFE;
+  text-decoration: none;
+  font-family: "Happy Monkey";
+}
+.zen-resources ul li:first-child {
+  grid-column: 1/3;
+}
+.zen-resources ul li:nth-child(2) {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.zen-resources ul li:nth-child(4) {
+  grid-row: 2/4;
+}
+.zen-resources ul li:nth-child(5) {
+  grid-column: 2/4;
+}
+
+@media only screen and (min-width: 480px) {
+  .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
+    font-size: 2.5rem;
+  }
+  .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
+    border: 38px solid transparent;
+    border-left: 40px solid #FEFEFE;
+  }
+  .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
+    border: 38px solid transparent;
+    border-right: 40px solid #FEFEFE;
+  }
+
+  .participation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .participation h3, .participation p:nth-of-type(1), .requirements h3 {
+    grid-column: 1/3;
+  }
+
+  .participation p:nth-of-type(2) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0);
+  }
+
+  .participation p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 100%, 0 95%, 0 0, 100% 5%);
+  }
+
+  .benefits p {
+    padding: 4rem 2rem 2rem;
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%);
+  }
+
+  .requirements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .requirements p:nth-of-type(1), .requirements p:nth-of-type(2), .requirements p:nth-of-type(5) {
+    grid-column: 1/3;
+  }
+
+  .requirements p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 3.5%, 0 96.5%, 100% 100%, 100% 0);
+  }
+
+  .requirements p:nth-of-type(4) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 96.5%, 0 100%, 0 0, 100% 3.5%);
+  }
+
+  .requirements p:nth-of-type(5) {
+    padding: 3rem 2rem;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  footer {
+    margin: 1.5rem;
+  }
+  footer a {
+    padding: 1rem;
+    font-family: "Happy Monkey";
+  }
+
+  .zen-resources li {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header, footer, .summary, p, .explanation p, .benefits p, .preamble p:nth-of-type(1), .participation p:nth-of-type(1), .preamble p:nth-of-type(2), .participation p:nth-of-type(2), .preamble p:nth-of-type(3), .participation p:nth-of-type(3), .explanation p:nth-of-type(1), .explanation p:nth-of-type(2), .requirements p:nth-of-type(1), .requirements p:nth-of-type(2), .requirements p:nth-of-type(3), .requirements p:nth-of-type(4), .requirements p:nth-of-type(5), .participation, .requirements {
+    all: unset;
+  }
+
+  .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    font-size: 1.1rem;
+  }
+  .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before {
+    border: 38px solid transparent;
+    border-left: 25px solid #121212;
+  }
+  .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after {
+    border: 38px solid transparent;
+    border-right: 25px solid #121212;
+  }
+
+  .preamble h3 {
+    background-color: #FF3A20;
+  }
+  .preamble h3::first-letter {
+    color: #FBED18;
+    text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+  }
+  .preamble h3::before {
+    border-left-color: #FBED18;
+  }
+  .preamble h3::after {
+    border-right-color: #FBED18;
+  }
+
+  /** grid **/
+  /** container **/
+  .supporting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 0.5fr;
+    grid-gap: 15px;
+    color: white;
+  }
+
+  /** sections **/
+  .intro {
+    height: fit-content;
+    padding: 6%;
+    grid-column: 1/span 2;
+    grid-row: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    background: #FBED18 radial-gradient(orange, transparent) 0 0/0.3em 0.3em space;
+    font-family: "Happy Monkey";
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header h2 {
+    margin-bottom: 3rem;
+    color: #FEFEFE;
+  }
+
+  .explanation {
+    grid-column: 1/span 1;
+    grid-row: 1/2;
+    -webkit-clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    margin-top: -50px;
+    margin-bottom: -20px;
+    background: #0F4770 radial-gradient(#102e44, transparent) 0 0/0.3em 0.3em space;
+    padding: 15%;
+    grid-auto-flow: row;
+    font-family: "Happy Monkey";
+  }
+
+  .participation {
+    grid-column: 2/span 1;
+    grid-row: 1/2;
+    -webkit-clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    margin-top: -50px;
+    margin-bottom: 2px;
+    margin-left: -5%;
+    background-color: #121212;
+    padding: 15%;
+    grid-auto-flow: row;
+    font-family: "Happy Monkey";
+  }
+
+  .requirements {
+    grid-column: 1/span 2;
+    grid-row: 2;
+    -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    background-color: #121212;
+    overflow: auto;
+    height: fit-content;
+    padding: 5%;
+    margin-top: -70px;
+    font-family: "Happy Monkey";
+  }
+
+  .benefits {
+    grid-column: 1/span 2;
+    grid-row: 3;
+    -webkit-clip-path: polygon(45% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%, 0 25%);
+    margin-top: -100px;
+    background-color: #121212;
+    overflow: auto;
+    height: fit-content;
+    padding: 10% 15% 15% 15%;
+    font-family: "Happy Monkey";
+  }
+
+  footer {
+    grid-column: 1/span 2;
+    text-align: center;
+    align-self: center;
+    font-family: "Happy Monkey";
+  }
+}
+.preamble h3 {
+  background-color: #fff;
+  border: solid 2px #000;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  position: relative;
+}
+
+.preamble h3:before {
+  border: solid 12px transparent;
+  border-left: solid 12px #000;
+  border-top: solid 12px #000;
+  bottom: -24px;
+  content: "";
+  height: 0;
+  top: 100%;
+  left: 24px;
+  position: absolute;
+  transform: skew(-15deg);
+  width: 0;
+}
+
+.preamble h3:after {
+  border: solid 10px transparent;
+  border-left: solid 10px #fff;
+  border-top: solid 10px #fff;
+  bottom: -19px;
+  content: "";
+  height: 0;
+  top: 100%;
+  left: 27px;
+  position: absolute;
+  transform: skew(-15deg);
+  width: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

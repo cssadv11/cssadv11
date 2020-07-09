@@ -1,13 +1,30 @@
 // Store the chosen color palette here
 
 $color-1: #FF3A20;
+$shade-1: #c72915;
+
 $color-2: #FBED18;
+$shade-2: orange;
+
 $color-3: #FEFEFE; // Used as the main background color
 $color-4: #121212; // Used as "black" for body text
+$shade-hover: #121212c9;
+$shade-4: #242323;
+
 $color-5: #fdf252;
-$color-6: #0F4770;
+
+$color-6: #1262ac;
+$shade-6: #5993bd;
+
+$color-7: #22c52a;
+$shade-7: #308f35;
+
+$color-8: #b1b1b1;
+$shade-8: #2f2f2f;
+
 
 // additional colors
 
 $success: #6fce72; // green
 $alert: $color-3; // red
+

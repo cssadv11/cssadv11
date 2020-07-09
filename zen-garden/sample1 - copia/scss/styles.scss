@@ -41,6 +41,8 @@ p {
 
 nav li {
 	font-family: $primary-font;
+	font-weight: bolder;
+
 }
 
 .summary, .explanation p, .benefits p {
@@ -125,7 +127,7 @@ nav li {
 .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
 
 	position: relative;
-	background-color: $color-2;
+	background-color: $color-3;
 	margin: 2rem 1rem;
 	padding: 1rem;
 	text-align: center;
@@ -133,28 +135,44 @@ nav li {
 	font-size: 1rem;
 	color: black;
 	letter-spacing: 1.5px;
+	border:solid 2px $color-4;
+	border-radius: 20px;
+
 	
 	&::first-letter {
 		color: $color-1;
 		font-size: 1.5rem;
+		text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+
 	}
 
 	&::before {
 		content: "";
 		position: absolute;
-		left: -1px;
-		top: 0;
-		border: 30px solid transparent;
-		border-left: 30px solid $color-3;
+		top: 100%;
+		left:24px;
+		height:0;
+		width:0;
+		border: solid 12px transparent;
+		border-left: solid 12px $color-3;
+		border-top: solid 12px $color-3;
+		bottom:-24px;
+		transform:skew(-15deg);
+	
 	}
 
 	&::after {
 		content: "";
 		position: absolute;
-		right: -1px;
-		top: 0;
-		border: 30px solid transparent;
-		border-right: 30px solid $color-3;
+		bottom:-19px;
+		height: 0;
+		width:0;
+		top: 100%;
+		left:27px;
+		border:solid 10px transparent;
+		border-left: solid 12px $color-3;		
+		border-top:solid 10px $color-3;
+		transform:skew(-15deg);
 	}
 }
 
@@ -166,7 +184,7 @@ footer {
 	a {
 		width: 80px;
 		padding: 1rem .5rem;
-		background-color: $color-4;
+		background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 		text-decoration: none;
 		text-align: center;
 		color: $color-3;
@@ -181,16 +199,21 @@ footer {
 	padding: 0;
 	margin: 0;
 
+	:hover {
+		color: $color-2;
+	}
+
 	li {
 		list-style: none;
 		padding: 1.5rem .75rem;
-		background-color: $color-4;
+		background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 		border: 1px solid $color-3;
 
 		a {
 			color: $color-3;
 			text-decoration: none;
 			font-family: $primary-font;
+
 		}
 
 		&:first-child {
@@ -225,16 +248,37 @@ footer {
 		
 		&::first-letter {
 			font-size: 2.5rem;
+			text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+			padding: 1.5px;
 		}
 	
 		&::before {
-			border: 38px solid transparent;
-			border-left: 40px solid $color-3;
+			content: "";
+			position: absolute;
+			top: 100%;
+			left:24px;
+			height:0;
+			width:0;
+			border: solid 12px transparent;
+			border-left:solid 12px $color-4;
+			border-top:solid 12px  $color-4;
+			bottom:-24px;
+			transform:skew(-15deg);
+		
 		}
 	
 		&::after {
-			border: 38px solid transparent;
-			border-right: 40px solid $color-3;
+			content: "";
+		position: absolute;
+		bottom:-19px;
+		height: 0;
+		width:0;
+		top: 100%;
+		left:27px;
+		border:solid 10px transparent;
+		border-left: solid 12px $color-3;		
+		border-top:solid 10px $color-3;
+		transform:skew(-15deg);
 		}
 	}
 	
@@ -315,19 +359,38 @@ footer {
 	font-size: 1.1rem;
 
 	&::before {
-		border: 38px solid transparent;
-		border-left: 25px solid $color-4;
+		content: "";
+		position: absolute;
+		top: 100%;
+		left:24px;
+		height:0;
+		width:0;
+		border: solid 12px transparent;
+		border-left:solid 12px rgb(0, 0, 0);
+		border-top:solid 12px rgb(255, 255, 255);
+		bottom:-24px;
+		transform:skew(-15deg);
+	
 	}
 
 	&::after {
-		border: 38px solid transparent;
-		border-right: 25px solid $color-4;
+		content: "";
+		position: absolute;
+		bottom:-19px;
+		height: 0;
+		width:0;
+		top: 100%;
+		left:27px;
+		border:solid 10px transparent;
+		border-left: solid 12px $color-3;		
+		border-top:solid 10px $color-3;
+		transform:skew(-15deg);
 	}
 }
 
 .preamble h3 {
 
-	background-color: $color-1;
+	background-color: $color-3;
 
 	&::first-letter {
 		color: $color-2;
@@ -335,11 +398,32 @@ footer {
 	}
 
 	&::before {
-		border-left-color: $color-2;
+		content: "";
+		position: absolute;
+		top: 100%;
+		left:24px;
+		height:0;
+		width:0;
+		border: solid 12px transparent;
+		border-left:solid 12px #000;
+		border-top:solid 12px #000;
+		bottom:-24px;
+		transform:skew(-15deg);
+	
 	}
 
 	&::after {
-		border-right-color: $color-2;
+		content: "";
+		position: absolute;
+		bottom:-19px;
+		height: 0;
+		width:0;
+		top: 100%;
+		left:27px;
+		border:solid 10px transparent;
+		border-left: solid 12px $color-3;
+		border-top: solid 10px $color-3;
+		transform:skew(-15deg);
 	}
 }
 
@@ -360,7 +444,7 @@ footer {
 		grid-row: 1;
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-		background: #FBED18 radial-gradient(orange, transparent) 0 0 / 0.3em 0.3em space;
+		background: $color-2 radial-gradient($shade-2, transparent) 0 0 / 0.3em 0.3em space;
 		font-family: $primary-font;
 	}
 
@@ -382,7 +466,7 @@ footer {
 		clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
 		margin-top: -50px;
 		margin-bottom: -20px;
-		background: $color-6 radial-gradient(#102e44, transparent) 0 0 / 0.3em 0.3em space;
+		background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 		padding: 15%;
 		grid-auto-flow: row;
 		font-family: $primary-font;
@@ -397,7 +481,7 @@ footer {
 		margin-top: -50px;
 		margin-bottom: 2px;
 		margin-left: -5%;
-		background-color: #121212;
+		background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.3em 0.3em space;
 		padding: 15%;
 		grid-auto-flow: row;
 		font-family: $primary-font;
@@ -408,7 +492,7 @@ footer {
 		grid-row: 2;
 		-webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
 		clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
-		background-color: #121212;
+		background: $shade-4 radial-gradient($color-4, transparent) 0 0 / 0.3em 0.3em space;
 		overflow: auto;
 		height: fit-content;
 		padding: 5%;
@@ -422,7 +506,7 @@ footer {
 		-webkit-clip-path: polygon(45% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
 		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%, 0 25%);
 		margin-top: -100px;
-		background-color: #121212;
+		background: $shade-4 radial-gradient($color-4, transparent) 0 0 / 0.3em 0.3em space;
 		overflow: auto;
 		height: fit-content;
 		padding: 10% 15% 15% 15%;
@@ -438,6 +522,8 @@ footer {
 	}
 }
 
+/* test
+
 .preamble h3 {
 	background-color:#fff;
 	border:solid 2px #000;
@@ -446,6 +532,8 @@ footer {
 	margin:.5em;
 	padding:.5em 1em;
 	position:relative;
+
+	
   }
   
   .preamble h3:before {
@@ -460,6 +548,7 @@ footer {
 	position:absolute;
 	transform:skew(-15deg);
 	width:0;
+	
   }
   
   .preamble h3:after {
@@ -475,3 +564,41 @@ footer {
 	transform:skew(-15deg);
 	width:0;
   }
+
+  .explanation h3 {
+	background-color:#fff;
+	border:solid 2px #000;
+	border-radius: 20px;
+	display:inline-block;
+	margin:.5em;
+	padding:.5em 1em;
+	position:relative;
+  }
+  
+  .explanation h3:before {
+	border:solid 12px transparent;
+	border-left:solid 12px #000;
+	border-top:solid 12px #000;
+	bottom:-24px;
+	content:"";
+	height:0;
+	top: 100%;
+	left:24px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  }
+  
+  .explanation h3:after {
+	border:solid 10px transparent;
+	border-left:solid 10px #fff;
+	border-top:solid 10px #fff;
+	bottom:-19px;
+	content:"";
+	height: 0;
+	top: 100%;
+	left:27px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  } */

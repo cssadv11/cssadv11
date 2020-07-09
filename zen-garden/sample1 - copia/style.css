@@ -73,14 +73,14 @@ p a {
 
 .design-selection nav li {
   position: relative;
-  background-color: #121212;
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
   color: #FBED18;
   padding: 1rem;
   width: 90%;
   list-style: none;
 }
 .design-selection nav li:hover {
-  background-color: rgba(18, 18, 18, 0.5);
+  background-color: #121212c9;
 }
 
 .design-selection nav li:nth-child(odd) {
@@ -139,7 +139,7 @@ nav a:nth-child(2) {
 .design-archives ul li {
   list-style: none;
   padding: 1rem;
-  background-color: #121212;
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
 }
 .design-archives ul li:nth-child(1) {
   margin-right: 2rem;
@@ -241,6 +241,7 @@ p {
 
 nav li {
   font-family: "Happy Monkey";
+  font-weight: bolder;
 }
 
 .summary, .explanation p, .benefits p {
@@ -322,7 +323,7 @@ nav li {
 
 .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
   position: relative;
-  background-color: #FBED18;
+  background-color: #FEFEFE;
   margin: 2rem 1rem;
   padding: 1rem;
   text-align: center;
@@ -330,26 +331,39 @@ nav li {
   font-size: 1rem;
   color: black;
   letter-spacing: 1.5px;
+  border: solid 2px #121212;
+  border-radius: 20px;
 }
 .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
   color: #FF3A20;
   font-size: 1.5rem;
+  text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
 }
 .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
   content: "";
   position: absolute;
-  left: -1px;
-  top: 0;
-  border: 30px solid transparent;
-  border-left: 30px solid #FEFEFE;
+  top: 100%;
+  left: 24px;
+  height: 0;
+  width: 0;
+  border: solid 12px transparent;
+  border-left: solid 12px #FEFEFE;
+  border-top: solid 12px #FEFEFE;
+  bottom: -24px;
+  transform: skew(-15deg);
 }
 .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
   content: "";
   position: absolute;
-  right: -1px;
-  top: 0;
-  border: 30px solid transparent;
-  border-right: 30px solid #FEFEFE;
+  bottom: -19px;
+  height: 0;
+  width: 0;
+  top: 100%;
+  left: 27px;
+  border: solid 10px transparent;
+  border-left: solid 12px #FEFEFE;
+  border-top: solid 10px #FEFEFE;
+  transform: skew(-15deg);
 }
 
 footer {
@@ -360,7 +374,7 @@ footer {
 footer a {
   width: 80px;
   padding: 1rem 0.5rem;
-  background-color: #121212;
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
   text-decoration: none;
   text-align: center;
   color: #FEFEFE;
@@ -374,10 +388,13 @@ footer a {
   padding: 0;
   margin: 0;
 }
+.zen-resources ul :hover {
+  color: #FBED18;
+}
 .zen-resources ul li {
   list-style: none;
   padding: 1.5rem 0.75rem;
-  background-color: #121212;
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
   border: 1px solid #FEFEFE;
 }
 .zen-resources ul li a {
@@ -407,14 +424,34 @@ footer a {
   }
   .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
     font-size: 2.5rem;
+    text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+    padding: 1.5px;
   }
   .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
-    border: 38px solid transparent;
-    border-left: 40px solid #FEFEFE;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    height: 0;
+    width: 0;
+    border: solid 12px transparent;
+    border-left: solid 12px #121212;
+    border-top: solid 12px #121212;
+    bottom: -24px;
+    transform: skew(-15deg);
   }
   .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
-    border: 38px solid transparent;
-    border-right: 40px solid #FEFEFE;
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    height: 0;
+    width: 0;
+    top: 100%;
+    left: 27px;
+    border: solid 10px transparent;
+    border-left: solid 12px #FEFEFE;
+    border-top: solid 10px #FEFEFE;
+    transform: skew(-15deg);
   }
 
   .participation {
@@ -486,26 +523,64 @@ footer a {
     font-size: 1.1rem;
   }
   .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before {
-    border: 38px solid transparent;
-    border-left: 25px solid #121212;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    height: 0;
+    width: 0;
+    border: solid 12px transparent;
+    border-left: solid 12px black;
+    border-top: solid 12px white;
+    bottom: -24px;
+    transform: skew(-15deg);
   }
   .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after {
-    border: 38px solid transparent;
-    border-right: 25px solid #121212;
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    height: 0;
+    width: 0;
+    top: 100%;
+    left: 27px;
+    border: solid 10px transparent;
+    border-left: solid 12px #FEFEFE;
+    border-top: solid 10px #FEFEFE;
+    transform: skew(-15deg);
   }
 
   .preamble h3 {
-    background-color: #FF3A20;
+    background-color: #FEFEFE;
   }
   .preamble h3::first-letter {
     color: #FBED18;
     text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
   }
   .preamble h3::before {
-    border-left-color: #FBED18;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    height: 0;
+    width: 0;
+    border: solid 12px transparent;
+    border-left: solid 12px #000;
+    border-top: solid 12px #000;
+    bottom: -24px;
+    transform: skew(-15deg);
   }
   .preamble h3::after {
-    border-right-color: #FBED18;
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    height: 0;
+    width: 0;
+    top: 100%;
+    left: 27px;
+    border: solid 10px transparent;
+    border-left: solid 12px #FEFEFE;
+    border-top: solid 10px #FEFEFE;
+    transform: skew(-15deg);
   }
 
   /** grid **/
@@ -546,7 +621,7 @@ footer a {
     clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
     margin-top: -50px;
     margin-bottom: -20px;
-    background: #0F4770 radial-gradient(#102e44, transparent) 0 0/0.3em 0.3em space;
+    background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
     padding: 15%;
     grid-auto-flow: row;
     font-family: "Happy Monkey";
@@ -560,7 +635,7 @@ footer a {
     margin-top: -50px;
     margin-bottom: 2px;
     margin-left: -5%;
-    background-color: #121212;
+    background: #121212 radial-gradient(#242323, transparent) 0 0/0.3em 0.3em space;
     padding: 15%;
     grid-auto-flow: row;
     font-family: "Happy Monkey";
@@ -571,7 +646,7 @@ footer a {
     grid-row: 2;
     -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
     clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
-    background-color: #121212;
+    background: #242323 radial-gradient(#121212, transparent) 0 0/0.3em 0.3em space;
     overflow: auto;
     height: fit-content;
     padding: 5%;
@@ -585,7 +660,7 @@ footer a {
     -webkit-clip-path: polygon(45% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%, 0 25%);
     margin-top: -100px;
-    background-color: #121212;
+    background: #242323 radial-gradient(#121212, transparent) 0 0/0.3em 0.3em space;
     overflow: auto;
     height: fit-content;
     padding: 10% 15% 15% 15%;
@@ -599,42 +674,85 @@ footer a {
     font-family: "Happy Monkey";
   }
 }
+/* test
+
 .preamble h3 {
-  background-color: #fff;
-  border: solid 2px #000;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 0.5em;
-  padding: 0.5em 1em;
-  position: relative;
-}
+	background-color:#fff;
+	border:solid 2px #000;
+	border-radius: 20px;
+	display:inline-block;
+	margin:.5em;
+	padding:.5em 1em;
+	position:relative;
 
-.preamble h3:before {
-  border: solid 12px transparent;
-  border-left: solid 12px #000;
-  border-top: solid 12px #000;
-  bottom: -24px;
-  content: "";
-  height: 0;
-  top: 100%;
-  left: 24px;
-  position: absolute;
-  transform: skew(-15deg);
-  width: 0;
-}
 
-.preamble h3:after {
-  border: solid 10px transparent;
-  border-left: solid 10px #fff;
-  border-top: solid 10px #fff;
-  bottom: -19px;
-  content: "";
-  height: 0;
-  top: 100%;
-  left: 27px;
-  position: absolute;
-  transform: skew(-15deg);
-  width: 0;
-}
+  }
+
+  .preamble h3:before {
+	border:solid 12px transparent;
+	border-left:solid 12px #000;
+	border-top:solid 12px #000;
+	bottom:-24px;
+	content:"";
+	height:0;
+	top: 100%;
+	left:24px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+
+  }
+
+  .preamble h3:after {
+	border:solid 10px transparent;
+	border-left:solid 10px #fff;
+	border-top:solid 10px #fff;
+	bottom:-19px;
+	content:"";
+	height: 0;
+	top: 100%;
+	left:27px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  }
+
+  .explanation h3 {
+	background-color:#fff;
+	border:solid 2px #000;
+	border-radius: 20px;
+	display:inline-block;
+	margin:.5em;
+	padding:.5em 1em;
+	position:relative;
+  }
+
+  .explanation h3:before {
+	border:solid 12px transparent;
+	border-left:solid 12px #000;
+	border-top:solid 12px #000;
+	bottom:-24px;
+	content:"";
+	height:0;
+	top: 100%;
+	left:24px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  }
+
+  .explanation h3:after {
+	border:solid 10px transparent;
+	border-left:solid 10px #fff;
+	border-top:solid 10px #fff;
+	bottom:-19px;
+	content:"";
+	height: 0;
+	top: 100%;
+	left:27px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  } */
 
 /*# sourceMappingURL=style.css.map */

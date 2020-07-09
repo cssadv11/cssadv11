@@ -2,14 +2,14 @@
 
 .design-selection nav li {
     position: relative;
-    background-color: $color-4;
+    background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
     color: $color-2;
     padding: 1rem;
     width: 90%;
     list-style: none;
 
     &:hover {
-        background-color: rgba($color-4, .5)
+        background-color: $shade-hover;
     }
 }
 
@@ -75,7 +75,7 @@ nav a {
     li {
         list-style: none;
         padding: 1rem;
-        background-color: $color-4;
+        background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 
         &:nth-child(1) {
             margin-right: 2rem;

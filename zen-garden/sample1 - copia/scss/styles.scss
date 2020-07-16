@@ -3,6 +3,7 @@
 @import "colors";
 @import "typography";
 @import "navigation";
+@import "background-image";
 
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
@@ -206,7 +207,7 @@ footer {
 	li {
 		list-style: none;
 		padding: 1.5rem .75rem;
-		background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
+		//background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 		border: 1px solid $color-3;
 
 		a {

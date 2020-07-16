@@ -39,7 +39,7 @@ header h2{
 			Styles for changing background on hover
 ******************************************************************/
 
-.summary, .explanation p, .benefits p, .preamble p, .participation p, .requirements p, .view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+.summary, .explanation p, .benefits p, .preamble p, .participation p, .requirements p {
 	position: relative;
 	color: transparent;
 	background-attachment: scroll;
@@ -52,8 +52,7 @@ header h2{
 	}
 }
 
-.summary:hover, .explanation p:hover, .benefits p:hover, .preamble p:hover, .participation p:hover, .requirements p:hover,
-.view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
+.summary:hover, .explanation p:hover, .benefits p:hover, .preamble p:hover, .participation p:hover, .requirements p:hover {
 
 	&::after {
 		content: "";
@@ -66,6 +65,30 @@ header h2{
 		height: 100%;
 		z-index: -1;
 		@include transition(all 1s);
+	}
+}
+
+.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+	position: relative;
+	background-attachment: scroll;
+
+	&:hover {
+		z-index: 1;
+	}
+}
+
+.view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		background-color: $color-4;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
 	}
 }
 

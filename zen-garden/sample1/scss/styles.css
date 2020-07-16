@@ -4,7 +4,7 @@
     Change it to however you want it to be. Don't forget to import
     the url in this file as well
 */
-@import url("https://fonts.googleapis.com/css?family=Bangers|Happy+Monkey");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 /* -------------------------------- 
 
 xTypography 
@@ -12,16 +12,15 @@ xTypography
 -------------------------------- */
 h1,
 h2 {
-  font-family: "Bangers", cursive; }
+  font-family: "Bangers", cursive;
+  color: #121212; }
 
 h1 {
   font-size: 3.1rem;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: .15rem;
-  margin: 0 0 0.4em;
-  text-shadow: -2.5px -2.5px black, 2.5px 2.5px black,  3.5px 3.5px black;
-  color: #FF3A20; }
+  margin: 0 0 0.4em; }
   @media only screen and (min-width: 768px) {
     h1 {
       font-size: 3.2rem; } }
@@ -33,12 +32,7 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .15rem;
-  margin: 1em 0;
-  text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
-  color: #FEFEFE; }
-  h2 abbr {
-    text-shadow: -2px -2px black, 1px 1px yellow,  2px 2px orange;
-    color: #FF3A20; }
+  margin: 1em 0; }
   @media only screen and (min-width: 768px) {
     h2 {
       font-size: 2.5rem;
@@ -50,8 +44,7 @@ p {
   color: white; }
   p a {
     color: #FF3A20;
-    text-decoration: underline;
-    font-family: "Happy Monkey"; }
+    text-decoration: underline; }
   @media only screen and (min-width: 768px) {
     p {
       font-size: 1.6rem;
@@ -59,13 +52,13 @@ p {
 
 .design-selection nav li {
   position: relative;
-  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
+  background-color: #121212;
   color: #FBED18;
   padding: 1rem;
   width: 90%;
   list-style: none; }
   .design-selection nav li:hover {
-    background-color: #121212; }
+    background-color: rgba(18, 18, 18, 0.5); }
 
 .design-selection nav li:nth-child(odd) {
   margin: 1rem 0;
@@ -114,7 +107,7 @@ nav a {
   .design-archives ul li {
     list-style: none;
     padding: 1rem;
-    background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+    background-color: #121212; }
     .design-archives ul li:nth-child(1) {
       margin-right: 2rem; }
     .design-archives ul li:nth-child(2) {
@@ -168,56 +161,6 @@ nav a {
           top: 0;
           border: 47px solid transparent;
           border-right: 47px solid #fff; } }
-/******************************************************************
-			Styles for changing background on hover
-******************************************************************/
-.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
-  position: relative;
-  background-attachment: scroll; }
-  .view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
-    z-index: 1; }
-
-.view-css:hover::after, .css-resources:hover::after, .zen-faq:hover::after, .zen-submit:hover::after, .zen-translations:hover::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  background-color: #121212;
-  width: 100%;
-  height: 100%;
-  z-index: -1; }
-
-/******************************************************************
-	 Change the image background here so they can be different
-******************************************************************/
-.view-css {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
-
-.css-resources {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
-
-.zen-faq {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
-
-.zen-submit {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
-
-.zen-translations {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
-
-/******************************************************************
-		    End Styles for changing background on hover
-******************************************************************/
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* This file based on 'Tranquille' by Dave Shea */
@@ -238,13 +181,6 @@ header h1 {
 header h2 {
   margin: 0;
   font-size: 2.5rem; }
-
-p {
-  font-family: "Happy Monkey"; }
-
-nav li {
-  font-family: "Happy Monkey";
-  font-weight: bolder; }
 
 .summary, .explanation p, .benefits p {
   margin: 1rem;
@@ -314,44 +250,31 @@ nav li {
 
 .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
   position: relative;
-  background-color: #FEFEFE;
+  background-color: #FBED18;
   margin: 2rem 1rem;
   padding: 1rem;
   text-align: center;
   font-family: "Bangers", cursive;
   font-size: 1rem;
   color: black;
-  letter-spacing: 1.5px;
-  border: solid 2px #121212;
-  border-radius: 20px; }
+  letter-spacing: 1.5px; }
   .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
     color: #FF3A20;
-    font-size: 1.5rem;
-    text-shadow: -2px -2px black, 2px 2px black, 3px 3px black; }
+    font-size: 1.5rem; }
   .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
     content: "";
     position: absolute;
-    top: 100%;
-    left: 24px;
-    height: 0;
-    width: 0;
-    border: solid 12px transparent;
-    border-left: solid 12px #FEFEFE;
-    border-top: solid 12px #FEFEFE;
-    bottom: -24px;
-    transform: skew(-15deg); }
+    left: -1px;
+    top: 0;
+    border: 30px solid transparent;
+    border-left: 30px solid #FEFEFE; }
   .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
     content: "";
     position: absolute;
-    bottom: -19px;
-    height: 0;
-    width: 0;
-    top: 100%;
-    left: 27px;
-    border: solid 10px transparent;
-    border-left: solid 12px #FEFEFE;
-    border-top: solid 10px #FEFEFE;
-    transform: skew(-15deg); }
+    right: -1px;
+    top: 0;
+    border: 30px solid transparent;
+    border-right: 30px solid #FEFEFE; }
 
 footer {
   display: flex;
@@ -360,7 +283,7 @@ footer {
   footer a {
     width: 80px;
     padding: 1rem .5rem;
-    background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
+    background-color: #121212;
     text-decoration: none;
     text-align: center;
     color: #FEFEFE; }
@@ -372,16 +295,14 @@ footer {
   text-align: center;
   padding: 0;
   margin: 0; }
-  .zen-resources ul :hover {
-    color: #FBED18; }
   .zen-resources ul li {
     list-style: none;
     padding: 1.5rem .75rem;
+    background-color: #121212;
     border: 1px solid #FEFEFE; }
     .zen-resources ul li a {
       color: #FEFEFE;
-      text-decoration: none;
-      font-family: "Happy Monkey"; }
+      text-decoration: none; }
     .zen-resources ul li:first-child {
       grid-column: 1/3; }
     .zen-resources ul li:nth-child(2) {
@@ -398,33 +319,13 @@ footer {
     padding: 1rem;
     font-size: 1.3rem; }
     .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
-      font-size: 2.5rem;
-      text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
-      padding: 1.5px; }
+      font-size: 2.5rem; }
     .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 24px;
-      height: 0;
-      width: 0;
-      border: solid 12px transparent;
-      border-left: solid 12px #121212;
-      border-top: solid 12px #121212;
-      bottom: -24px;
-      transform: skew(-15deg); }
+      border: 38px solid transparent;
+      border-left: 40px solid #FEFEFE; }
     .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
-      content: "";
-      position: absolute;
-      bottom: -19px;
-      height: 0;
-      width: 0;
-      top: 100%;
-      left: 27px;
-      border: solid 10px transparent;
-      border-left: solid 12px #FEFEFE;
-      border-top: solid 10px #FEFEFE;
-      transform: skew(-15deg); }
+      border: 38px solid transparent;
+      border-right: 40px solid #FEFEFE; }
 
   .participation {
     display: grid;
@@ -467,8 +368,7 @@ footer {
   footer {
     margin: 1.5rem; }
     footer a {
-      padding: 1rem;
-      font-family: "Happy Monkey"; }
+      padding: 1rem; }
 
   .zen-resources li {
     padding: 2rem; } }
@@ -479,59 +379,20 @@ footer {
   .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
     font-size: 1.1rem; }
     .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 24px;
-      height: 0;
-      width: 0;
-      border: solid 12px transparent;
-      border-left: solid 12px black;
-      border-top: solid 12px white;
-      bottom: -24px;
-      transform: skew(-15deg); }
+      border: 38px solid transparent;
+      border-left: 25px solid #121212; }
     .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after {
-      content: "";
-      position: absolute;
-      bottom: -19px;
-      height: 0;
-      width: 0;
-      top: 100%;
-      left: 27px;
-      border: solid 10px transparent;
-      border-left: solid 12px #FEFEFE;
-      border-top: solid 10px #FEFEFE;
-      transform: skew(-15deg); }
+      border: 38px solid transparent;
+      border-right: 25px solid #121212; }
 
   .preamble h3 {
-    background-color: #FEFEFE; }
+    background-color: #FF3A20; }
     .preamble h3::first-letter {
-      color: #FBED18;
-      text-shadow: -2px -2px black, 2px 2px black, 3px 3px black; }
+      color: #FBED18; }
     .preamble h3::before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 24px;
-      height: 0;
-      width: 0;
-      border: solid 12px transparent;
-      border-left: solid 12px #000;
-      border-top: solid 12px #000;
-      bottom: -24px;
-      transform: skew(-15deg); }
+      border-left-color: #FBED18; }
     .preamble h3::after {
-      content: "";
-      position: absolute;
-      bottom: -19px;
-      height: 0;
-      width: 0;
-      top: 100%;
-      left: 27px;
-      border: solid 10px transparent;
-      border-left: solid 12px #FEFEFE;
-      border-top: solid 10px #FEFEFE;
-      transform: skew(-15deg); }
+      border-right-color: #FBED18; }
 
   /** grid **/
   /** container **/
@@ -550,15 +411,14 @@ footer {
     grid-row: 1;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
-    background: #FBED18 radial-gradient(orange, transparent) 0 0/0.3em 0.3em space;
-    font-family: "Happy Monkey"; }
+    background-color: #FBED18; }
 
   header {
     text-align: center; }
 
   header h2 {
     margin-bottom: 3rem;
-    color: #FEFEFE; }
+    color: #FF3A20; }
 
   .explanation {
     grid-column: 1 / span 1;
@@ -567,10 +427,9 @@ footer {
     clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
     margin-top: -50px;
     margin-bottom: -20px;
-    background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
+    background-color: #121212;
     padding: 15%;
-    grid-auto-flow: row;
-    font-family: "Happy Monkey"; }
+    grid-auto-flow: row; }
 
   .participation {
     grid-column: 2 / span 1;
@@ -580,22 +439,20 @@ footer {
     margin-top: -50px;
     margin-bottom: 2px;
     margin-left: -5%;
-    background: #121212 radial-gradient(#242323, transparent) 0 0/0.3em 0.3em space;
+    background-color: #121212;
     padding: 15%;
-    grid-auto-flow: row;
-    font-family: "Happy Monkey"; }
+    grid-auto-flow: row; }
 
   .requirements {
     grid-column: 1 / span 2;
     grid-row: 2;
     -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
     clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
-    background: #242323 radial-gradient(#121212, transparent) 0 0/0.3em 0.3em space;
+    background-color: #121212;
     overflow: auto;
     height: fit-content;
     padding: 5%;
-    margin-top: -70px;
-    font-family: "Happy Monkey"; }
+    margin-top: -70px; }
 
   .benefits {
     grid-column: 1 / span 2;
@@ -603,94 +460,14 @@ footer {
     -webkit-clip-path: polygon(45% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%, 0 25%);
     margin-top: -100px;
-    background: #242323 radial-gradient(#121212, transparent) 0 0/0.3em 0.3em space;
+    background-color: #121212;
     overflow: auto;
     height: fit-content;
-    padding: 10% 15% 15% 15%;
-    font-family: "Happy Monkey"; }
+    padding: 10% 15% 15% 15%; }
 
   footer {
     grid-column: 1 / span 2;
     text-align: center;
-    align-self: center;
-    font-family: "Happy Monkey"; } }
-/* test
+    align-self: center; } }
 
-.preamble h3 {
-	background-color:#fff;
-	border:solid 2px #000;
-	border-radius: 20px;
-	display:inline-block;
-	margin:.5em;
-	padding:.5em 1em;
-	position:relative;
-
-	
-  }
-  
-  .preamble h3:before {
-	border:solid 12px transparent;
-	border-left:solid 12px #000;
-	border-top:solid 12px #000;
-	bottom:-24px;
-	content:"";
-	height:0;
-	top: 100%;
-	left:24px;
-	position:absolute;
-	transform:skew(-15deg);
-	width:0;
-	
-  }
-  
-  .preamble h3:after {
-	border:solid 10px transparent;
-	border-left:solid 10px #fff;
-	border-top:solid 10px #fff;
-	bottom:-19px;
-	content:"";
-	height: 0;
-	top: 100%;
-	left:27px;
-	position:absolute;
-	transform:skew(-15deg);
-	width:0;
-  }
-
-  .explanation h3 {
-	background-color:#fff;
-	border:solid 2px #000;
-	border-radius: 20px;
-	display:inline-block;
-	margin:.5em;
-	padding:.5em 1em;
-	position:relative;
-  }
-  
-  .explanation h3:before {
-	border:solid 12px transparent;
-	border-left:solid 12px #000;
-	border-top:solid 12px #000;
-	bottom:-24px;
-	content:"";
-	height:0;
-	top: 100%;
-	left:24px;
-	position:absolute;
-	transform:skew(-15deg);
-	width:0;
-  }
-  
-  .explanation h3:after {
-	border:solid 10px transparent;
-	border-left:solid 10px #fff;
-	border-top:solid 10px #fff;
-	bottom:-19px;
-	content:"";
-	height: 0;
-	top: 100%;
-	left:27px;
-	position:absolute;
-	transform:skew(-15deg);
-	width:0;
-  } */
+/*# sourceMappingURL=styles.css.map */

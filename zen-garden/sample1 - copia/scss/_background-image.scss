@@ -1,0 +1,72 @@
+
+/******************************************************************
+			Styles for changing background on hover
+******************************************************************/
+
+.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+	position: relative;
+	background-attachment: scroll;
+
+	&:hover {
+		z-index: 1;
+	}
+}
+
+.view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		background-color: $color-4;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+}
+
+/******************************************************************
+	 Change the image background here so they can be different
+******************************************************************/
+
+// View This Design’s 
+
+.view-css {
+	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// CSS Resources 
+
+.css-resources {
+	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// FAQ
+
+.zen-faq {
+	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// Submit a Design 
+
+.zen-submit {
+	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// Translations
+
+.zen-translations {
+	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+
+/******************************************************************
+		    End Styles for changing background on hover
+******************************************************************/

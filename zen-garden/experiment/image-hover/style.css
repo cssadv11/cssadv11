@@ -150,21 +150,22 @@ header h2 {
 /******************************************************************
 			Styles for changing background on hover
 ******************************************************************/
-.summary, .explanation p, .benefits p, .preamble p, .participation p, .requirements p {
+.summary, .explanation p, .benefits p, .preamble p, .participation p, .requirements p, .view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
   position: relative;
   color: transparent;
   background-attachment: scroll;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   transition: all 0.25s; }
-  .summary:hover, .explanation p:hover, .benefits p:hover, .preamble p:hover, .participation p:hover, .requirements p:hover {
+  .summary:hover, .explanation p:hover, .benefits p:hover, .preamble p:hover, .participation p:hover, .requirements p:hover, .view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
     color: #fff;
     z-index: 1;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     transition: all 1s; }
 
-.summary:hover::after, .explanation p:hover::after, .benefits p:hover::after, .preamble p:hover::after, .participation p:hover::after, .requirements p:hover::after {
+.summary:hover::after, .explanation p:hover::after, .benefits p:hover::after, .preamble p:hover::after, .participation p:hover::after, .requirements p:hover::after,
+.view-css:hover::after, .css-resources:hover::after, .zen-faq:hover::after, .zen-submit:hover::after, .zen-translations:hover::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -175,8 +176,8 @@ header h2 {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #121212;
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -214,9 +215,9 @@ header h2 {
 	 Change the image background here so they can be different
 ******************************************************************/
 /******************** 320px upto 480px ***************************/
-.summary {
+.summary, .view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
   background-image: url(luffy-png.png);
-  background-size: 480px; }
+  background-size: cover; }
 
 .preamble p:nth-of-type(1) {
   background-image: url(luffy.jpg);

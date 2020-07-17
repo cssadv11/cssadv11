@@ -196,24 +196,26 @@ nav a {
 	 Change the image background here so they can be different
 ******************************************************************/
 .view-css {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
+  background-image: url(../experiment/logos.png);
+  background-size: 70% 100%;
+ }
 
 .css-resources {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
+  background-image: url(../experiment/thor.jpg);
+  background-size: 100% 100%;}
 
 .zen-faq {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
+  background-image: url(../experiment/iron.jpg);
+  background-size: 100% 100%; }
 
 .zen-submit {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
+  background-image: url(../experiment/spidermanbio_portada.jpg);
+  background-size: 100% 100%;
+  }
 
 .zen-translations {
-  background-image: url(../experiment/image-hover/luffy-png.png);
-  background-size: cover; }
+  background-image: url(../experiment/marvel.jpg);
+  background-size: cover;}
 
 /******************************************************************
 		    End Styles for changing background on hover

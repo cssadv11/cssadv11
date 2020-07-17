@@ -176,6 +176,22 @@ nav a {
   background-attachment: scroll; }
   .view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
     z-index: 1; }
+  .view-css a, .css-resources a, .zen-faq a, .zen-submit a, .zen-translations a {
+    font-size: .95rem;
+    position: absolute;
+    background-color: #121212;
+    padding: .5rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  @media only screen and (min-width: 768px) {
+    .view-css a, .css-resources a, .zen-faq a, .zen-submit a, .zen-translations a {
+      font-size: 1.2rem;
+      padding: 1rem; } }
 
 .view-css:hover::after, .css-resources:hover::after, .zen-faq:hover::after, .zen-submit:hover::after, .zen-translations:hover::after {
   content: "";
@@ -191,32 +207,39 @@ nav a {
   width: 100%;
   height: 100%;
   z-index: -1; }
+.view-css:hover a, .css-resources:hover a, .zen-faq:hover a, .zen-submit:hover a, .zen-translations:hover a {
+  color: #FBED18; }
+
+.view-css {
+  height: 100px; }
 
 /******************************************************************
 	 Change the image background here so they can be different
 ******************************************************************/
-.view-css {
-  background-image: url(../experiment/comic.jpg);
-  background-size: cover;
- }
+.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+  background-color: #121212;
+  background-image: none; }
 
-.css-resources {
-  background-image: url(../experiment/thor\ 2.jpg);
-  background-size: 100% 100%;}
+@media only screen and (min-width: 768px) {
+  .view-css {
+    background-image: url(../experiment/comic.jpg);
+    background-size: cover; }
 
-.zen-faq {
-  background-image: url(../experiment/iron.jpg);
-  background-size: 100% 100%; }
+  .css-resources {
+    background-image: url(../experiment/thor-3.png);
+    background-size: cover; }
 
-.zen-submit {
-  background-image: url(../experiment/spidermanbio_portada.jpg);
-  background-size: 100% 100%;
-  }
+  .zen-faq {
+    background-image: url(../experiment/iron-man.png);
+    background-size: cover; }
 
-.zen-translations {
-  background-image: url(../experiment/marvel.jpg);
-  background-size: cover;}
+  .zen-submit {
+    background-image: url(../experiment/spidermanbio_portada.jpg);
+    background-size: 100% 100%; }
 
+  .zen-translations {
+    background-image: url(../experiment/marvel-2.jpg);
+    background-size: cover; } }
 /******************************************************************
 		    End Styles for changing background on hover
 ******************************************************************/

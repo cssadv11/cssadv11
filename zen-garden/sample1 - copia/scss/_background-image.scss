@@ -10,6 +10,23 @@
 	&:hover {
 		z-index: 1;
 	}
+
+	a {
+		font-size: .95rem;
+		position: absolute;
+		background-color: $color-4;
+		padding: .5rem;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+	}
+
+	@include MQ(S){
+		a {
+			font-size: 1.2rem;
+			padding: 1rem;
+		}
+	}
 }
 
 .view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
@@ -25,6 +42,14 @@
 		height: 100%;
 		z-index: -1;
 	}
+
+	a {
+		color: $color-2;
+	}
+}
+
+.view-css {
+	height: 100px; // Make the boxes bigger
 }
 
 /******************************************************************
@@ -33,37 +58,47 @@
 
 // View This Design’s 
 
-.view-css {
-	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
-	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+	background-color: $color-4;
+	background-image: none; //No backgroudn for small view (until 768px)
 }
 
-// CSS Resources 
+@include MQ(S){
 
-.css-resources {
-	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
-	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
-}
+	// View This Design’s 
 
-// FAQ
+	.view-css {
+		background-image: url(../experiment/comic.jpg); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
 
-.zen-faq {
-	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
-	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
-}
+	// CSS Resources 
 
-// Submit a Design 
+	.css-resources {
+		background-image: url(../experiment/thor-3.png); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
 
-.zen-submit {
-	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
-	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
-}
+	// FAQ
 
-// Translations
+	.zen-faq {
+		background-image: url(../experiment/iron-man.png); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
 
-.zen-translations {
-	background-image: url(../experiment/image-hover/luffy-png.png); //Change background image here
-	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	// Submit a Design 
+
+	.zen-submit {
+		background-image: url(../experiment/spidermanbio_portada.jpg); //Change background image here
+		background-size: 100% 100%; // Change according to viewport size. Use Photoshop and MQs
+	}
+
+	// Translations
+
+	.zen-translations {
+		background-image: url(../experiment/marvel-2.jpg); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
 }
 
 

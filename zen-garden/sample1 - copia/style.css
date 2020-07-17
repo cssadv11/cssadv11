@@ -252,9 +252,25 @@ nav a {
 /******************************************************************
 	 Change the image background here so they can be different
 ******************************************************************/
-.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
-  background-color: #121212;
-  background-image: none; }
+.view-css {
+  background-image: url(../experiment/comic.jpg);
+  background-size: cover; }
+
+.css-resources {
+  background-image: url(../experiment/thor-4.png);
+  background-size: cover; }
+
+.zen-faq {
+  background-image: url(../experiment/iron-man.png);
+  background-size: cover; }
+
+.zen-submit {
+  background-image: url(../experiment/spiderman-small.png);
+  background-size: cover; }
+
+.zen-translations {
+  background-image: url(../experiment/marvel-2.jpg);
+  background-size: cover; }
 
 @media only screen and (min-width: 768px) {
   .view-css {

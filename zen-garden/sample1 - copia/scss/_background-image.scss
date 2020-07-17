@@ -96,9 +96,44 @@
 
 // View This Design’s 
 
-.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
-	background-color: $color-4;
-	background-image: none; //No backgroudn for small view (until 768px)
+//.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+//	background-color: $color-4;
+//	background-image: none; //No backgroudn for small view (until 768px)
+//}
+
+// View This Design’s 
+
+.view-css {
+	background-image: url(../experiment/comic.jpg); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// CSS Resources 
+
+.css-resources {
+	background-image: url(../experiment/thor-4.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// FAQ
+
+.zen-faq {
+	background-image: url(../experiment/iron-man.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// Submit a Design 
+
+.zen-submit {
+	background-image: url(../experiment/spiderman-small.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// Translations
+
+.zen-translations {
+	background-image: url(../experiment/marvel-2.jpg); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 }
 
 @include MQ(S){

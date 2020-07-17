@@ -196,12 +196,12 @@ nav a {
 	 Change the image background here so they can be different
 ******************************************************************/
 .view-css {
-  background-image: url(../experiment/logos.png);
-  background-size: 70% 100%;
+  background-image: url(../experiment/comic.jpg);
+  background-size: cover;
  }
 
 .css-resources {
-  background-image: url(../experiment/thor.jpg);
+  background-image: url(../experiment/thor\ 2.jpg);
   background-size: 100% 100%;}
 
 .zen-faq {

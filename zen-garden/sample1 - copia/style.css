@@ -193,6 +193,42 @@ nav a {
       font-size: 1.2rem;
       padding: 1rem; } }
 
+@media only screen and (min-width: 768px) {
+  .css-resources a {
+    left: unset;
+    right: 0;
+    top: 5%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .css-resources:hover a {
+    top: 50%;
+    left: 50%;
+    right: unset;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+  .zen-submit a {
+    left: 0;
+    top: 5%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .zen-submit:hover a {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); } }
 .view-css:hover::after, .css-resources:hover::after, .zen-faq:hover::after, .zen-submit:hover::after, .zen-translations:hover::after {
   content: "";
   position: absolute;

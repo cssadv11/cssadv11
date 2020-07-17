@@ -29,6 +29,44 @@
 	}
 }
 
+@include MQ(S) {
+	.css-resources {
+		
+		a {
+			left: unset;
+			right: 0;
+			top: 5%;
+			@include transform(translate(0, 0));
+		}
+
+		&:hover {
+			a {
+				top: 50%;
+				left: 50%;
+				right: unset;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+	}
+
+	.zen-submit {
+		
+		a {
+			left: 0;
+			top: 5%;
+			@include transform(translate(0, 0));
+		}
+
+		&:hover {
+			a {
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%, -50%));
+			}
+		} 
+	}
+}
+
 .view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
 
 	&::after {

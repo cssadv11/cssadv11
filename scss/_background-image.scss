@@ -1,0 +1,273 @@
+/******************************************************************
+		Styles for changing background on hover on footer
+******************************************************************/
+
+footer {
+
+	a {
+		position: relative;
+	}
+
+	a::before {
+		content: "";
+		background-size: 50px 100px;
+		width: 50px;
+		height: 100px;
+		position: absolute;
+		top: -100px;
+		left: 50%;
+		@include transform(translate(-50%));
+	}
+
+	a:hover::before {
+		top: 120px;
+		@include MQ(670px){ top: 60px;}
+		z-index: -1;
+		@include transition(all 1s);
+	}
+
+	a:nth-of-type(1)::before {
+		background-image: url(../experiment/batman.png);
+	}
+
+	a:nth-of-type(2)::before {
+		background-image: url(../experiment/superman-best.png);
+	}
+
+	a:nth-of-type(3)::before {
+		background-image: url(../experiment/spiderman-png.png);
+	}
+
+	a:nth-of-type(4)::before {
+		background-image: url(../experiment/wonder-woman.png);
+	}
+
+	a:nth-of-type(5)::before {
+		background-image: url(../experiment/green-lantern-png.png);
+	}
+
+	@include MQ(700px){
+
+		a::after {
+			position: absolute;
+			width: 200%;
+			top: 160px;
+			left: 50%;
+			@include transform(translate(-50%));
+			@include MQ(M){
+				width: 300%;
+				top: 80px;
+				left: 60px;
+				@include transform(unset);
+			}
+			color: $color-4;
+			opacity: 0;
+		}
+
+		a:hover::after {
+			opacity: 1;
+			@include transition(all 1s ease .3s);
+		}
+
+		a:nth-of-type(1)::after {
+			content: "It's not who I am underneath, but what I do that defines me.";
+		}
+	
+		a:nth-of-type(2)::after {
+			content: "You’re going to change the world.";
+		}
+	
+		a:nth-of-type(3)::after {
+			content: "I'm team Marvel!";
+		}
+	
+		a:nth-of-type(4)::after {
+			content: "I will fight for those who cannot fight for themselves.";
+		}
+	
+		a:nth-of-type(5)::after {
+			content: "No evil shall escape my sight.";
+		}
+	}
+	
+}
+
+/******************************************************************
+			Styles for changing background on hover
+******************************************************************/
+
+.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+	position: relative;
+	background-attachment: scroll;
+
+	&:hover {
+		z-index: 1;
+	}
+
+	a {
+		font-size: .95rem;
+		position: absolute;
+		background-color: $color-4;
+		padding: .5rem;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+	}
+
+	@include MQ(S){
+		a {
+			font-size: 1.2rem;
+			padding: 1rem;
+		}
+	}
+}
+
+@include MQ(S) {
+	.css-resources {
+		
+		a {
+			left: unset;
+			right: 0;
+			top: 5%;
+			@include transform(translate(0, 0));
+		}
+
+		&:hover {
+			a {
+				top: 50%;
+				left: 50%;
+				right: unset;
+				@include transform(translate(-50%, -50%));
+			}
+		}
+	}
+
+	.zen-submit {
+		
+		a {
+			left: 0;
+			top: 5%;
+			@include transform(translate(0, 0));
+		}
+
+		&:hover {
+			a {
+				top: 50%;
+				left: 50%;
+				@include transform(translate(-50%, -50%));
+			}
+		} 
+	}
+}
+
+.view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include transform(translate(-50%, -50%));
+		background-color: $color-4;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
+	a {
+		color: $color-2;
+	}
+}
+
+.view-css {
+	height: 100px; // Make the boxes bigger
+}
+
+/******************************************************************
+	 Change the image background here so they can be different
+******************************************************************/
+
+// View This Design’s 
+
+//.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+//	background-color: $color-4;
+//	background-image: none; //No backgroudn for small view (until 768px)
+//}
+
+// View This Design’s 
+
+.view-css {
+	background-image: url(../experiment/comic.jpg); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// CSS Resources 
+
+.css-resources {
+	background-image: url(../experiment/thor-4.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// FAQ
+
+.zen-faq {
+	background-image: url(../experiment/iron-man.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// Submit a Design 
+
+.zen-submit {
+	background-image: url(../experiment/spiderman-small.png); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+// Translations
+
+.zen-translations {
+	background-image: url(../experiment/marvel-2.jpg); //Change background image here
+	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+}
+
+@include MQ(S){
+
+	// View This Design’s 
+
+	.view-css {
+		background-image: url(../experiment/comic.jpg); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
+
+	// CSS Resources 
+
+	.css-resources {
+		background-image: url(../experiment/thor-3.png); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
+
+	// FAQ
+
+	.zen-faq {
+		background-image: url(../experiment/iron-man.png); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
+
+	// Submit a Design 
+
+	.zen-submit {
+		background-image: url(../experiment/spidermanbio_portada.jpg); //Change background image here
+		background-size: 100% 100%; // Change according to viewport size. Use Photoshop and MQs
+	}
+
+	// Translations
+
+	.zen-translations {
+		background-image: url(../experiment/marvel-2.jpg); //Change background image here
+		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
+	}
+}
+
+
+/******************************************************************
+		    End Styles for changing background on hover
+******************************************************************/

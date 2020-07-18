@@ -1,0 +1,996 @@
+@charset "UTF-8";
+/*
+    The primary font variable is the font that adjusts the body text
+
+    Change it to however you want it to be. Don't forget to import
+    the url in this file as well
+*/
+@import url("https://fonts.googleapis.com/css?family=Bangers|Happy+Monkey");
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Bangers", cursive; }
+
+h1 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .15rem;
+  margin: 0 0 0.4em;
+  text-shadow: -2.5px -2.5px black, 2.5px 2.5px black,  3.5px 3.5px black;
+  color: #FF3A20; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 4rem; } }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  margin: 1em 0;
+  text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+  color: #FEFEFE; }
+  h2 abbr {
+    text-shadow: -2px -2px black, 1px 1px yellow,  2px 2px orange;
+    color: #FF3A20; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 2.5rem;
+      margin: 1em 0 1.4em; } }
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: white; }
+  p a {
+    color: #FF3A20;
+    text-decoration: underline;
+    font-family: "Happy Monkey"; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
+
+.design-selection nav li {
+  position: relative;
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
+  color: #FBED18;
+  padding: 1rem;
+  width: 90%;
+  list-style: none; }
+  .design-selection nav li:hover {
+    background-color: #121212; }
+
+.design-selection nav li:nth-child(odd) {
+  margin: 1rem 0;
+  left: -3rem; }
+  .design-selection nav li:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: 0;
+    border: 45px solid transparent;
+    border-right: 45px solid #fff; }
+
+.design-selection nav li:nth-child(even) {
+  margin: 1rem 0;
+  right: 0;
+  text-align: right; }
+  .design-selection nav li:nth-child(even)::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    border: 45px solid transparent;
+    border-left: 45px solid #fff; }
+  .design-selection nav li:nth-child(even) a {
+    text-align: right; }
+
+nav a {
+  font-family: "Bangers", cursive;
+  font-size: 1.5rem;
+  color: #FBED18;
+  text-decoration: none;
+  display: block;
+  text-align: left; }
+  nav a::first-letter {
+    color: #FF3A20;
+    font-size: 2rem; }
+  nav a:nth-child(2) {
+    display: inline; }
+
+.design-archives ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  justify-content: center; }
+  .design-archives ul li {
+    list-style: none;
+    padding: 1rem;
+    background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+    .design-archives ul li:nth-child(1) {
+      margin-right: 2rem; }
+    .design-archives ul li:nth-child(2) {
+      margin-left: 2rem; }
+      .design-archives ul li:nth-child(2) a {
+        text-align: right; }
+
+@media only screen and (min-width: 480px) {
+  .design-selection nav li {
+    width: 95%; }
+
+  .design-selection nav li:nth-child(odd)::after {
+    border: 47px solid transparent;
+    border-right: 47px solid #fff; }
+
+  .design-selection nav li:nth-child(even)::after {
+    border: 47px solid transparent;
+    border-left: 47px solid #fff; } }
+@media only screen and (min-width: XS) {
+  .design-selection nav li {
+    width: 95%; }
+
+  .design-selection nav li:nth-child(odd)::after {
+    border: 47px solid transparent;
+    border-right: 47px solid #fff; }
+
+  .design-selection nav li:nth-child(even)::after {
+    border: 47px solid transparent;
+    border-left: 47px solid #fff; } }
+@media only screen and (min-width: 1024px) {
+  .design-selection nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto; }
+    .design-selection nav ul li {
+      width: 80%;
+      text-align: center; }
+      .design-selection nav ul li a {
+        text-align: center; }
+      .design-selection nav ul li:nth-child(odd) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+        .design-selection nav ul li:nth-child(odd)::before {
+          content: "";
+          position: absolute;
+          left: -1px;
+          top: 0;
+          border: 47px solid transparent;
+          border-left: 47px solid #fff; }
+      .design-selection nav ul li:nth-child(even) {
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+        .design-selection nav ul li:nth-child(even) a {
+          text-align: center; }
+        .design-selection nav ul li:nth-child(even)::before {
+          content: "";
+          position: absolute;
+          right: -1px;
+          top: 0;
+          border: 47px solid transparent;
+          border-right: 47px solid #fff; } }
+/******************************************************************
+	            	Styles for the flash animation
+******************************************************************/
+.intro::before {
+  content: url(../experiment/flash.gif);
+  position: relative;
+  left: -600px;
+  animation: run 3s ease-in 1s infinite; }
+
+@keyframes run {
+  0% {
+    left: -600px; }
+  100% {
+    left: 120%; } }
+/******************************************************************
+	             	End Styles for animation
+******************************************************************/
+/******************************************************************
+		Styles for changing background on hover on footer
+******************************************************************/
+footer a {
+  position: relative; }
+footer a::before {
+  content: "";
+  background-size: 50px 100px;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%); }
+footer a:hover::before {
+  top: 120px;
+  z-index: -1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+  @media only screen and (min-width: 670px) {
+    footer a:hover::before {
+      top: 60px; } }
+footer a:nth-of-type(1)::before {
+  background-image: url(../experiment/batman.png); }
+footer a:nth-of-type(2)::before {
+  background-image: url(../experiment/superman-best.png); }
+footer a:nth-of-type(3)::before {
+  background-image: url(../experiment/spiderman-png.png); }
+footer a:nth-of-type(4)::before {
+  background-image: url(../experiment/wonder-woman.png); }
+footer a:nth-of-type(5)::before {
+  background-image: url(../experiment/green-lantern-png.png); }
+@media only screen and (min-width: 700px) {
+  footer a::after {
+    position: absolute;
+    width: 200%;
+    top: 160px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    color: #121212;
+    opacity: 0; } }
+  @media only screen and (min-width: 700px) and (min-width: 1024px) {
+    footer a::after {
+      width: 300%;
+      top: 80px;
+      left: 60px;
+      -webkit-transform: unset;
+      -moz-transform: unset;
+      -ms-transform: unset;
+      -o-transform: unset;
+      transform: unset; } }
+@media only screen and (min-width: 700px) {
+  footer a:hover::after {
+    opacity: 1;
+    -webkit-transition: all 1s ease 0.3s;
+    -moz-transition: all 1s ease 0.3s;
+    transition: all 1s ease 0.3s; }
+  footer a:nth-of-type(1)::after {
+    content: "It's not who I am underneath, but what I do that defines me."; }
+  footer a:nth-of-type(2)::after {
+    content: "You’re going to change the world."; }
+  footer a:nth-of-type(3)::after {
+    content: "I'm team Marvel!"; }
+  footer a:nth-of-type(4)::after {
+    content: "I will fight for those who cannot fight for themselves."; }
+  footer a:nth-of-type(5)::after {
+    content: "No evil shall escape my sight."; } }
+
+/******************************************************************
+			Styles for changing background on hover
+******************************************************************/
+.view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
+  position: relative;
+  background-attachment: scroll; }
+  .view-css:hover, .css-resources:hover, .zen-faq:hover, .zen-submit:hover, .zen-translations:hover {
+    z-index: 1; }
+  .view-css a, .css-resources a, .zen-faq a, .zen-submit a, .zen-translations a {
+    font-size: .95rem;
+    position: absolute;
+    background-color: #121212;
+    padding: .5rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  @media only screen and (min-width: 768px) {
+    .view-css a, .css-resources a, .zen-faq a, .zen-submit a, .zen-translations a {
+      font-size: 1.2rem;
+      padding: 1rem; } }
+
+@media only screen and (min-width: 768px) {
+  .css-resources a {
+    left: unset;
+    right: 0;
+    top: 5%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .css-resources:hover a {
+    top: 50%;
+    left: 50%;
+    right: unset;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+  .zen-submit a {
+    left: 0;
+    top: 5%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  .zen-submit:hover a {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); } }
+.view-css:hover::after, .css-resources:hover::after, .zen-faq:hover::after, .zen-submit:hover::after, .zen-translations:hover::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #121212;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+.view-css:hover a, .css-resources:hover a, .zen-faq:hover a, .zen-submit:hover a, .zen-translations:hover a {
+  color: #FBED18; }
+
+.view-css {
+  height: 100px; }
+
+/******************************************************************
+	 Change the image background here so they can be different
+******************************************************************/
+.view-css {
+  background-image: url(../experiment/comic.jpg);
+  background-size: cover; }
+
+.css-resources {
+  background-image: url(../experiment/thor-4.png);
+  background-size: cover; }
+
+.zen-faq {
+  background-image: url(../experiment/iron-man.png);
+  background-size: cover; }
+
+.zen-submit {
+  background-image: url(../experiment/spiderman-small.png);
+  background-size: cover; }
+
+.zen-translations {
+  background-image: url(../experiment/marvel-2.jpg);
+  background-size: cover; }
+
+@media only screen and (min-width: 768px) {
+  .view-css {
+    background-image: url(../experiment/comic.jpg);
+    background-size: cover; }
+
+  .css-resources {
+    background-image: url(../experiment/thor-3.png);
+    background-size: cover; }
+
+  .zen-faq {
+    background-image: url(../experiment/iron-man.png);
+    background-size: cover; }
+
+  .zen-submit {
+    background-image: url(../experiment/spidermanbio_portada.jpg);
+    background-size: 100% 100%; }
+
+  .zen-translations {
+    background-image: url(../experiment/marvel-2.jpg);
+    background-size: cover; } }
+/******************************************************************
+		    End Styles for changing background on hover
+******************************************************************/
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+body {
+  background-color: #FEFEFE;
+  font-size: 1.1rem; }
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: #FBED18 radial-gradient(orange, transparent) 0 0/0.3em 0.3em space; }
+
+header h1 {
+  margin-bottom: 0; }
+
+header h2 {
+  margin: 0;
+  font-size: 2.5rem; }
+
+p {
+  font-family: "Happy Monkey"; }
+
+nav li {
+  font-family: "Happy Monkey";
+  font-weight: bolder; }
+
+.summary a, .participation a, .requirements a {
+  font-family: "Bangers", cursive;
+  text-shadow: -1px -1px #FF3A20 1px 1px #121212, 2px 2px #FF3A20;
+  color: #FBED18;
+  font-size: x-large;
+  cursor: pointer; }
+
+.summary a {
+  color: #FF3A20; }
+
+.summary, .explanation p, .benefits p {
+  margin: 1rem;
+  padding: 3rem 2rem;
+  background-color: #121212;
+  clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.preamble p:nth-of-type(1), .participation p:nth-of-type(1) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 3rem;
+  background-color: #121212;
+  clip-path: polygon(50% 96%, 100% 100%, 100% 0, 0 0, 0 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.preamble p:nth-of-type(2), .participation p:nth-of-type(2) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0% 95%, 0% 5%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.preamble p:nth-of-type(3), .participation p:nth-of-type(3) {
+  margin: 1rem;
+  padding: 3.5rem 2rem 2rem;
+  background-color: #121212;
+  clip-path: polygon(0 0, 50% 4%, 100% 0, 100% 100%, 0 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.explanation p:nth-of-type(1) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%, 0% 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.explanation p:nth-of-type(2) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(100% 0%, 0% 5%, 0% 95%, 100% 100%, 100% 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.requirements p:nth-of-type(1) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%, 0% 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.requirements p:nth-of-type(2) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(100% 0%, 0% 3.5%, 0% 96.5%, 100% 100%, 100% 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.requirements p:nth-of-type(3) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(0% 0%, 100% 6.5%, 100% 93.5%, 0% 100%, 0% 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.requirements p:nth-of-type(4) {
+  margin: 1rem;
+  padding: 2.5rem 2rem 2.5rem;
+  background-color: #121212;
+  clip-path: polygon(100% 0%, 0% 5%, 0% 100%, 50% 95%, 100% 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.requirements p:nth-of-type(5) {
+  margin: 1rem;
+  padding: 3rem 2rem;
+  background-color: #121212;
+  clip-path: polygon(0 10%, 50% 0%, 100% 10%, 100% 100%, 0% 100%, 0% 100%);
+  background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space; }
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
+  position: relative;
+  background-color: #FEFEFE;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: "Bangers", cursive;
+  font-size: 1rem;
+  color: black;
+  letter-spacing: 1.5px;
+  border: solid 2px #121212;
+  border-radius: 20px; }
+  .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
+    color: #FF3A20;
+    font-size: 1.5rem;
+    text-shadow: -2px -2px black, 2px 2px black, 3px 3px black; }
+  .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    height: 0;
+    width: 0;
+    border: solid 12px transparent;
+    border-left: solid 12px #121212;
+    border-top: solid 12px #121212;
+    bottom: -24px;
+    transform: skew(-15deg); }
+  .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    height: 0;
+    width: 0;
+    top: 100%;
+    left: 27px;
+    border: solid 10px transparent;
+    border-left: solid 12px #FEFEFE;
+    border-top: solid 10px #FEFEFE;
+    transform: skew(-15deg); }
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 10rem 0 10rem 0; }
+  footer a {
+    width: 80px;
+    padding: 1rem .5rem;
+    background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
+    text-decoration: none;
+    text-align: center;
+    color: #FEFEFE; }
+
+.zen-resources ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  padding: 0;
+  margin: 0; }
+  .zen-resources ul :hover {
+    color: #FBED18; }
+  .zen-resources ul li {
+    list-style: none;
+    padding: 1.5rem .75rem;
+    border: 1px solid #FEFEFE; }
+    .zen-resources ul li a {
+      color: #FEFEFE;
+      text-decoration: none;
+      font-family: "Happy Monkey"; }
+    .zen-resources ul li:first-child {
+      grid-column: 1/3; }
+    .zen-resources ul li:nth-child(2) {
+      grid-column: 3/4;
+      grid-row: 1/3; }
+    .zen-resources ul li:nth-child(4) {
+      grid-row: 2/ 4; }
+    .zen-resources ul li:nth-child(5) {
+      grid-column: 2/4; }
+
+@media only screen and (min-width: 480px) {
+  .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 1.3rem; }
+    .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
+      font-size: 2.5rem;
+      text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+      padding: 1.5px; }
+    .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 24px;
+      height: 0;
+      width: 0;
+      border: solid 12px transparent;
+      border-left: solid 12px #121212;
+      border-top: solid 12px #121212;
+      bottom: -24px;
+      transform: skew(-15deg); }
+    .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      height: 0;
+      width: 0;
+      top: 100%;
+      left: 27px;
+      border: solid 10px transparent;
+      border-left: solid 12px #FEFEFE;
+      border-top: solid 10px #FEFEFE;
+      transform: skew(-15deg); }
+
+  .participation {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .participation h3, .participation p:nth-of-type(1), .requirements h3 {
+    grid-column: 1/3; }
+
+  .participation p:nth-of-type(2) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0); }
+
+  .participation p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 100%, 0 95%, 0 0, 100% 5%); }
+
+  .benefits p {
+    padding: 4rem 2rem 2rem;
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%); }
+
+  .requirements {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .requirements p:nth-of-type(1), .requirements p:nth-of-type(2), .requirements p:nth-of-type(5) {
+    grid-column: 1/3; }
+
+  .requirements p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 3.5%, 0 96.5%, 100% 100%, 100% 0); }
+
+  .requirements p:nth-of-type(4) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 96.5%, 0 100%, 0 0, 100% 3.5%); }
+
+  .requirements p:nth-of-type(5) {
+    padding: 3rem 2rem;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0); }
+
+  footer {
+    margin: 10rem 1.5rem 10rem 1.5rem; } }
+  @media only screen and (min-width: 480px) and (min-width: 700px) {
+    footer {
+      margin-bottom: 12rem; } }
+  @media only screen and (min-width: 480px) and (min-width: 1024px) {
+    footer {
+      margin-bottom: unset; } }
+@media only screen and (min-width: 480px) {
+    footer a {
+      padding: 1rem;
+      font-family: "Happy Monkey"; }
+
+  .zen-resources li {
+    padding: 2rem; } }
+@media only screen and (min-width: XS) {
+  .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 1.3rem; }
+    .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
+      font-size: 2.5rem;
+      text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+      padding: 1.5px; }
+    .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 24px;
+      height: 0;
+      width: 0;
+      border: solid 12px transparent;
+      border-left: solid 12px #121212;
+      border-top: solid 12px #121212;
+      bottom: -24px;
+      transform: skew(-15deg); }
+    .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      height: 0;
+      width: 0;
+      top: 100%;
+      left: 27px;
+      border: solid 10px transparent;
+      border-left: solid 12px #FEFEFE;
+      border-top: solid 10px #FEFEFE;
+      transform: skew(-15deg); }
+
+  .participation {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .participation h3, .participation p:nth-of-type(1), .requirements h3 {
+    grid-column: 1/3; }
+
+  .participation p:nth-of-type(2) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0); }
+
+  .participation p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 100%, 0 95%, 0 0, 100% 5%); }
+
+  .benefits p {
+    padding: 4rem 2rem 2rem;
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%); }
+
+  .requirements {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .requirements p:nth-of-type(1), .requirements p:nth-of-type(2), .requirements p:nth-of-type(5) {
+    grid-column: 1/3; }
+
+  .requirements p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 3.5%, 0 96.5%, 100% 100%, 100% 0); }
+
+  .requirements p:nth-of-type(4) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 96.5%, 0 100%, 0 0, 100% 3.5%); }
+
+  .requirements p:nth-of-type(5) {
+    padding: 3rem 2rem;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0); }
+
+  footer {
+    margin: 10rem 1.5rem 10rem 1.5rem; } }
+  @media only screen and (min-width: XS) and (min-width: 700px) {
+    footer {
+      margin-bottom: 12rem; } }
+  @media only screen and (min-width: XS) and (min-width: 1024px) {
+    footer {
+      margin-bottom: unset; } }
+@media only screen and (min-width: XS) {
+    footer a {
+      padding: 1rem;
+      font-family: "Happy Monkey"; }
+
+  .zen-resources li {
+    padding: 2rem; } }
+@media only screen and (min-width: 1024px) {
+  header, footer, .summary, p, .explanation p, .benefits p, .preamble p:nth-of-type(1), .participation p:nth-of-type(1), .preamble p:nth-of-type(2), .participation p:nth-of-type(2), .preamble p:nth-of-type(3), .participation p:nth-of-type(3), .explanation p:nth-of-type(1), .explanation p:nth-of-type(2), .requirements p:nth-of-type(1), .requirements p:nth-of-type(2), .requirements p:nth-of-type(3), .requirements p:nth-of-type(4), .requirements p:nth-of-type(5), .participation, .requirements {
+    all: unset; }
+
+  .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    font-size: 1.1rem; }
+    .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 24px;
+      height: 0;
+      width: 0;
+      border: solid 12px transparent;
+      border-left: solid 12px black;
+      border-top: solid 12px white;
+      bottom: -24px;
+      transform: skew(-15deg); }
+    .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      height: 0;
+      width: 0;
+      top: 100%;
+      left: 27px;
+      border: solid 10px transparent;
+      border-left: solid 12px #FEFEFE;
+      border-top: solid 10px #FEFEFE;
+      transform: skew(-15deg); }
+
+  .preamble h3 {
+    background-color: #FEFEFE; }
+    .preamble h3::first-letter {
+      color: #FBED18;
+      text-shadow: -2px -2px black, 2px 2px black, 3px 3px black; }
+    .preamble h3::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 24px;
+      height: 0;
+      width: 0;
+      border: solid 12px transparent;
+      border-left: solid 12px #000;
+      border-top: solid 12px #000;
+      bottom: -24px;
+      transform: skew(-15deg); }
+    .preamble h3::after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      height: 0;
+      width: 0;
+      top: 100%;
+      left: 27px;
+      border: solid 10px transparent;
+      border-left: solid 12px #FEFEFE;
+      border-top: solid 10px #FEFEFE;
+      transform: skew(-15deg); }
+
+  /** grid **/
+  /** container **/
+  .supporting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: .5fr;
+    grid-gap: 15px;
+    color: white; }
+
+  /** sections **/
+  .intro {
+    height: fit-content;
+    padding: 6%;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    background: #FBED18 radial-gradient(orange, transparent) 0 0/0.3em 0.3em space;
+    font-family: "Happy Monkey"; }
+
+  header {
+    text-align: center; }
+
+  header h2 {
+    margin-bottom: 3rem;
+    color: #FEFEFE; }
+
+  .explanation {
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+    -webkit-clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+    margin-top: -50px;
+    margin-bottom: -20px;
+    background: #121212 radial-gradient(#242323, transparent) 0 0/0.4em 0.4em space;
+    padding: 15%;
+    grid-auto-flow: row;
+    font-family: "Happy Monkey"; }
+
+  .participation {
+    grid-column: 2 / span 1;
+    grid-row: 1 / 2;
+    -webkit-clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+    margin-top: -50px;
+    margin-bottom: 2px;
+    margin-left: -5%;
+    background: #121212 radial-gradient(#242323, transparent) 0 0/0.3em 0.3em space;
+    padding: 15%;
+    grid-auto-flow: row;
+    font-family: "Happy Monkey"; }
+
+  .requirements {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+    background: #242323 radial-gradient(#121212, transparent) 0 0/0.3em 0.3em space;
+    overflow: auto;
+    height: fit-content;
+    padding: 5%;
+    margin-top: -70px;
+    font-family: "Happy Monkey"; }
+
+  .benefits {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    -webkit-clip-path: polygon(45% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%, 0 25%);
+    margin-top: -100px;
+    background: #242323 radial-gradient(#121212, transparent) 0 0/0.3em 0.3em space;
+    overflow: auto;
+    height: fit-content;
+    padding: 10% 15% 15% 15%;
+    font-family: "Happy Monkey"; }
+
+  footer {
+    grid-column: 1 / span 2;
+    text-align: center;
+    align-self: center;
+    font-family: "Happy Monkey"; } }
+/* test
+
+.preamble h3 {
+	background-color:#fff;
+	border:solid 2px #000;
+	border-radius: 20px;
+	display:inline-block;
+	margin:.5em;
+	padding:.5em 1em;
+	position:relative;
+
+	
+  }
+  
+  .preamble h3:before {
+	border:solid 12px transparent;
+	border-left:solid 12px #000;
+	border-top:solid 12px #000;
+	bottom:-24px;
+	content:"";
+	height:0;
+	top: 100%;
+	left:24px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+	
+  }
+  
+  .preamble h3:after {
+	border:solid 10px transparent;
+	border-left:solid 10px #fff;
+	border-top:solid 10px #fff;
+	bottom:-19px;
+	content:"";
+	height: 0;
+	top: 100%;
+	left:27px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  }
+
+  .explanation h3 {
+	background-color:#fff;
+	border:solid 2px #000;
+	border-radius: 20px;
+	display:inline-block;
+	margin:.5em;
+	padding:.5em 1em;
+	position:relative;
+  }
+  
+  .explanation h3:before {
+	border:solid 12px transparent;
+	border-left:solid 12px #000;
+	border-top:solid 12px #000;
+	bottom:-24px;
+	content:"";
+	height:0;
+	top: 100%;
+	left:24px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  }
+  
+  .explanation h3:after {
+	border:solid 10px transparent;
+	border-left:solid 10px #fff;
+	border-top:solid 10px #fff;
+	bottom:-19px;
+	content:"";
+	height: 0;
+	top: 100%;
+	left:27px;
+	position:absolute;
+	transform:skew(-15deg);
+	width:0;
+  } */

@@ -1,4 +1,24 @@
 
+/* The Flash
+.intro::before {
+	content: url(../experiment/flash.png);
+	position: relative;
+	top: 50%;
+	left: -350px;
+	@include transform(translate(-50%, -50%));
+	animation: run 1s ease-in;
+}
+
+@keyframes run {
+	0% {
+		left: -350px;
+	}
+	100% {
+		left: 120%;
+	}
+}
+*/
+
 /******************************************************************
 			Styles for changing background on hover
 ******************************************************************/

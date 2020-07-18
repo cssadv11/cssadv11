@@ -430,6 +430,16 @@ nav li {
   font-family: "Happy Monkey";
   font-weight: bolder; }
 
+.summary a, .participation a, .requirements a {
+  font-family: "Bangers", cursive;
+  text-shadow: -1px -1px #FF3A20 1px 1px #121212, 2px 2px #FF3A20;
+  color: #FBED18;
+  font-size: x-large;
+  cursor: pointer; }
+
+.summary a {
+  color: #FF3A20; }
+
 .summary, .explanation p, .benefits p {
   margin: 1rem;
   padding: 3rem 2rem;

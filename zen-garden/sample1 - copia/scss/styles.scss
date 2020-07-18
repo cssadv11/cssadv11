@@ -48,6 +48,18 @@ nav li {
 
 }
 
+.summary a, .participation a, .requirements a {
+	font-family: $secondary-font;
+	text-shadow: -1px -1px $color-1 1px 1px $color-4, 2px 2px $color-1;
+	color: $color-2;
+	font-size: x-large;
+	cursor: pointer;
+}
+
+.summary a {
+	color: $color-1;
+}
+
 .summary, .explanation p, .benefits p {
 	margin: 1rem;
 	padding: 3rem 2rem;

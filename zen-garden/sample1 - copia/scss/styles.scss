@@ -52,21 +52,23 @@ nav li {
 	padding: 3rem 2rem;
 	background-color: $color-4;
 	clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0);
-	
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .preamble p:nth-of-type(1), .participation p:nth-of-type(1) {
 	margin: 1rem;
 	padding: 2.5rem 2rem 3rem;
 	background-color: $color-4;
-	clip-path: polygon(50% 96%, 100% 100%, 100% 0, 0 0, 0 100%);	
+	clip-path: polygon(50% 96%, 100% 100%, 100% 0, 0 0, 0 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;	
 }
 
 .preamble p:nth-of-type(2), .participation p:nth-of-type(2) {
 	margin: 1rem;
 	padding: 2.5rem 2rem 2.5rem;
 	background-color: $color-4;
-	clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0% 95%, 0% 5%);	
+	clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0% 95%, 0% 5%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;	
 }
 
 .preamble p:nth-of-type(3), .participation p:nth-of-type(3) {
@@ -74,6 +76,7 @@ nav li {
 	padding: 3.5rem 2rem 2rem;
 	background-color: $color-4;
 	clip-path: polygon(0 0, 50% 4%, 100% 0, 100% 100%, 0 100%);	
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .explanation p:nth-of-type(1) {
@@ -81,6 +84,7 @@ nav li {
 	padding: 2.5rem 2rem 2.5rem;
 	background-color: $color-4;
 	clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%, 0% 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .explanation p:nth-of-type(2) {
@@ -88,6 +92,7 @@ nav li {
 	padding: 2.5rem 2rem 2.5rem;
 	background-color: $color-4;
 	clip-path: polygon(100% 0%, 0% 5%, 0% 95%, 100% 100%, 100% 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .requirements p:nth-of-type(1) {
@@ -95,6 +100,7 @@ nav li {
 	padding: 2.5rem 2rem 2.5rem;
 	background-color: $color-4;
 	clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%, 0% 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .requirements p:nth-of-type(2) {
@@ -102,6 +108,7 @@ nav li {
 	padding: 2.5rem 2rem 2.5rem;
 	background-color: $color-4;
 	clip-path: polygon(100% 0%, 0% 3.5%, 0% 96.5%, 100% 100%, 100% 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .requirements p:nth-of-type(3) {
@@ -109,6 +116,7 @@ nav li {
 	padding: 2.5rem 2rem 2.5rem;
 	background-color: $color-4;
 	clip-path: polygon(0% 0%, 100% 6.5%, 100% 93.5%, 0% 100%, 0% 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .requirements p:nth-of-type(4) {
@@ -116,6 +124,7 @@ nav li {
 	padding: 2.5rem 2rem 2.5rem;
 	background-color: $color-4;
 	clip-path: polygon(100% 0%, 0% 5%, 0% 100%, 50% 95%, 100% 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 .requirements p:nth-of-type(5) {
@@ -123,6 +132,7 @@ nav li {
 	padding: 3rem 2rem;
 	background-color: $color-4;
 	clip-path: polygon(0 10%, 50% 0%, 100% 10%, 100% 100%, 0% 100%, 0% 100%);
+	background: $color-4 radial-gradient($shade-4, transparent) 0 0 / 0.4em 0.4em space;
 }
 
 // Titles
@@ -156,8 +166,8 @@ nav li {
 		height:0;
 		width:0;
 		border: solid 12px transparent;
-		border-left: solid 12px $color-3;
-		border-top: solid 12px $color-3;
+		border-left: solid 12px $color-4;
+		border-top: solid 12px $color-4;
 		bottom:-24px;
 		transform:skew(-15deg);
 	

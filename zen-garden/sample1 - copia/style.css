@@ -133,6 +133,17 @@ nav a {
   .design-selection nav li:nth-child(even)::after {
     border: 47px solid transparent;
     border-left: 47px solid #fff; } }
+@media only screen and (min-width: XS) {
+  .design-selection nav li {
+    width: 95%; }
+
+  .design-selection nav li:nth-child(odd)::after {
+    border: 47px solid transparent;
+    border-right: 47px solid #fff; }
+
+  .design-selection nav li:nth-child(even)::after {
+    border: 47px solid transparent;
+    border-left: 47px solid #fff; } }
 @media only screen and (min-width: 1024px) {
   .design-selection nav ul {
     display: grid;
@@ -168,25 +179,55 @@ nav a {
           top: 0;
           border: 47px solid transparent;
           border-right: 47px solid #fff; } }
-/* The Flash
-.intro::before {
-	content: url(../experiment/flash.png);
-	position: relative;
-	top: 50%;
-	left: -350px;
-	@include transform(translate(-50%, -50%));
-	animation: run 1s ease-in;
-}
+/******************************************************************
+		Styles for changing background on hover on footer
+******************************************************************/
+footer a {
+  position: relative; }
+footer a::before {
+  content: "";
+  background-size: 50px 100px;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%); }
+footer a:hover::before {
+  content: "";
+  background-size: 50px 100px;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s; }
+  @media only screen and (min-width: 670px) {
+    footer a:hover::before {
+      top: 60px; } }
+footer a:nth-of-type(1)::before {
+  background-image: url(../experiment/batman.png); }
+footer a:nth-of-type(2)::before {
+  background-image: url(../experiment/green-lantern-png.png); }
+footer a:nth-of-type(3)::before {
+  background-image: url(../experiment/spiderman-png.png); }
+footer a:nth-of-type(4)::before {
+  background-image: url(../experiment/superman-best.png); }
+footer a:nth-of-type(5)::before {
+  background-image: url(../experiment/theflash.png); }
 
-@keyframes run {
-	0% {
-		left: -350px;
-	}
-	100% {
-		left: 120%;
-	}
-}
-*/
 /******************************************************************
 			Styles for changing background on hover
 ******************************************************************/
@@ -452,7 +493,8 @@ nav li {
 footer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center;
+  margin: 10rem 0 10rem 0; }
   footer a {
     width: 80px;
     padding: 1rem .5rem;
@@ -561,7 +603,87 @@ footer {
     clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0); }
 
   footer {
-    margin: 1.5rem; }
+    margin: 10rem 1.5rem 10rem 1.5rem; }
+    footer a {
+      padding: 1rem;
+      font-family: "Happy Monkey"; }
+
+  .zen-resources li {
+    padding: 2rem; } }
+@media only screen and (min-width: XS) {
+  .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .select, .archives, .resources {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 1.3rem; }
+    .preamble h3::first-letter, .explanation h3::first-letter, .participation h3::first-letter, .benefits h3::first-letter, .requirements h3::first-letter, .select::first-letter, .archives::first-letter, .resources::first-letter {
+      font-size: 2.5rem;
+      text-shadow: -2px -2px black, 2px 2px black, 3px 3px black;
+      padding: 1.5px; }
+    .preamble h3::before, .explanation h3::before, .participation h3::before, .benefits h3::before, .requirements h3::before, .select::before, .archives::before, .resources::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 24px;
+      height: 0;
+      width: 0;
+      border: solid 12px transparent;
+      border-left: solid 12px #121212;
+      border-top: solid 12px #121212;
+      bottom: -24px;
+      transform: skew(-15deg); }
+    .preamble h3::after, .explanation h3::after, .participation h3::after, .benefits h3::after, .requirements h3::after, .select::after, .archives::after, .resources::after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      height: 0;
+      width: 0;
+      top: 100%;
+      left: 27px;
+      border: solid 10px transparent;
+      border-left: solid 12px #FEFEFE;
+      border-top: solid 10px #FEFEFE;
+      transform: skew(-15deg); }
+
+  .participation {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .participation h3, .participation p:nth-of-type(1), .requirements h3 {
+    grid-column: 1/3; }
+
+  .participation p:nth-of-type(2) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 5%, 0 100%, 100% 95%, 100% 0); }
+
+  .participation p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 100%, 0 95%, 0 0, 100% 5%); }
+
+  .benefits p {
+    padding: 4rem 2rem 2rem;
+    clip-path: polygon(50% 0, 100% 15%, 100% 100%, 0 100%, 0 15%); }
+
+  .requirements {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+
+  .requirements p:nth-of-type(1), .requirements p:nth-of-type(2), .requirements p:nth-of-type(5) {
+    grid-column: 1/3; }
+
+  .requirements p:nth-of-type(3) {
+    padding: 3rem 2rem;
+    clip-path: polygon(0 3.5%, 0 96.5%, 100% 100%, 100% 0); }
+
+  .requirements p:nth-of-type(4) {
+    padding: 3rem 2rem;
+    clip-path: polygon(100% 96.5%, 0 100%, 0 0, 100% 3.5%); }
+
+  .requirements p:nth-of-type(5) {
+    padding: 3rem 2rem;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0); }
+
+  footer {
+    margin: 10rem 1.5rem 10rem 1.5rem; }
     footer a {
       padding: 1rem;
       font-family: "Happy Monkey"; }

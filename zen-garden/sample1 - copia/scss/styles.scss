@@ -348,6 +348,8 @@ footer {
 	footer {
 	
 		margin: 10rem 1.5rem 10rem 1.5rem;
+		@include MQ(700px){margin-bottom: 12rem;}
+		@include MQ(M){margin-bottom: unset;}
 
 		a {
 			padding: 1rem;

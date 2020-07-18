@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
     The primary font variable is the font that adjusts the body text
 
@@ -215,19 +216,8 @@ footer a::before {
   -o-transform: translate(-50%);
   transform: translate(-50%); }
 footer a:hover::before {
-  content: "";
-  background-size: 50px 100px;
-  width: 50px;
-  height: 100px;
-  position: absolute;
   top: 120px;
-  left: 50%;
   z-index: -1;
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  transform: translate(-50%);
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   transition: all 1s; }
@@ -237,13 +227,52 @@ footer a:hover::before {
 footer a:nth-of-type(1)::before {
   background-image: url(../experiment/batman.png); }
 footer a:nth-of-type(2)::before {
-  background-image: url(../experiment/wonder-woman.png); }
+  background-image: url(../experiment/superman-best.png); }
 footer a:nth-of-type(3)::before {
   background-image: url(../experiment/spiderman-png.png); }
 footer a:nth-of-type(4)::before {
-  background-image: url(../experiment/superman-best.png); }
+  background-image: url(../experiment/wonder-woman.png); }
 footer a:nth-of-type(5)::before {
   background-image: url(../experiment/green-lantern-png.png); }
+@media only screen and (min-width: 700px) {
+  footer a::after {
+    position: absolute;
+    width: 200%;
+    top: 160px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    color: #121212;
+    opacity: 0; } }
+  @media only screen and (min-width: 700px) and (min-width: 1024px) {
+    footer a::after {
+      width: 300%;
+      top: 80px;
+      left: 60px;
+      -webkit-transform: unset;
+      -moz-transform: unset;
+      -ms-transform: unset;
+      -o-transform: unset;
+      transform: unset; } }
+@media only screen and (min-width: 700px) {
+  footer a:hover::after {
+    opacity: 1;
+    -webkit-transition: all 1s ease 0.3s;
+    -moz-transition: all 1s ease 0.3s;
+    transition: all 1s ease 0.3s; }
+  footer a:nth-of-type(1)::after {
+    content: "It's not who I am underneath, but what I do that defines me."; }
+  footer a:nth-of-type(2)::after {
+    content: "You’re going to change the world."; }
+  footer a:nth-of-type(3)::after {
+    content: "I'm team Marvel!"; }
+  footer a:nth-of-type(4)::after {
+    content: "I will fight for those who cannot fight for themselves."; }
+  footer a:nth-of-type(5)::after {
+    content: "No evil shall escape my sight."; } }
 
 /******************************************************************
 			Styles for changing background on hover
@@ -632,7 +661,14 @@ footer {
     clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0); }
 
   footer {
-    margin: 10rem 1.5rem 10rem 1.5rem; }
+    margin: 10rem 1.5rem 10rem 1.5rem; } }
+  @media only screen and (min-width: 480px) and (min-width: 700px) {
+    footer {
+      margin-bottom: 12rem; } }
+  @media only screen and (min-width: 480px) and (min-width: 1024px) {
+    footer {
+      margin-bottom: unset; } }
+@media only screen and (min-width: 480px) {
     footer a {
       padding: 1rem;
       font-family: "Happy Monkey"; }
@@ -712,7 +748,14 @@ footer {
     clip-path: polygon(50% 15%, 100% 0, 100% 100%, 0 100%, 0 0); }
 
   footer {
-    margin: 10rem 1.5rem 10rem 1.5rem; }
+    margin: 10rem 1.5rem 10rem 1.5rem; } }
+  @media only screen and (min-width: XS) and (min-width: 700px) {
+    footer {
+      margin-bottom: 12rem; } }
+  @media only screen and (min-width: XS) and (min-width: 1024px) {
+    footer {
+      margin-bottom: unset; } }
+@media only screen and (min-width: XS) {
     footer a {
       padding: 1rem;
       font-family: "Happy Monkey"; }

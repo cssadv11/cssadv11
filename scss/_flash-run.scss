@@ -2,21 +2,23 @@
 	            	Styles for the flash animation
 ******************************************************************/
 
-.intro {
-	&::before {
-		content: url(../experiment/flash.gif);
-		position: relative;
-		left: -600px;
-		animation: run 3s ease-in 1s infinite;
+@include MQ(M){
+	.intro {
+		&::before {
+			content: url(images/flash.gif);
+			position: relative;
+			left: -600px;
+			animation: run 3s ease-in 1s infinite;
+		}
 	}
-}
 
-@keyframes run {
-	0% {
-		left: -600px;
-	}
-	100% {
-		left: 120%;
+	@keyframes run {
+		0% {
+			left: -600px;
+		}
+		100% {
+			left: 120%;
+		}
 	}
 }
 

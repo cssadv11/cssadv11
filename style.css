@@ -183,17 +183,18 @@ nav a {
 /******************************************************************
 	            	Styles for the flash animation
 ******************************************************************/
-.intro::before {
-  content: url(../experiment/flash.gif);
-  position: relative;
-  left: -600px;
-  animation: run 3s ease-in 1s infinite; }
+@media only screen and (min-width: 1024px) {
+  .intro::before {
+    content: url(images/flash.gif);
+    position: relative;
+    left: -600px;
+    animation: run 3s ease-in 1s infinite; }
 
-@keyframes run {
-  0% {
-    left: -600px; }
-  100% {
-    left: 120%; } }
+  @keyframes run {
+    0% {
+      left: -600px; }
+    100% {
+      left: 120%; } } }
 /******************************************************************
 	             	End Styles for animation
 ******************************************************************/
@@ -225,15 +226,15 @@ footer a:hover::before {
     footer a:hover::before {
       top: 60px; } }
 footer a:nth-of-type(1)::before {
-  background-image: url(../experiment/batman.png); }
+  background-image: url(images/batman.png); }
 footer a:nth-of-type(2)::before {
-  background-image: url(../experiment/superman-best.png); }
+  background-image: url(images/superman-best.png); }
 footer a:nth-of-type(3)::before {
-  background-image: url(../experiment/spiderman-png.png); }
+  background-image: url(images/spiderman-png.png); }
 footer a:nth-of-type(4)::before {
-  background-image: url(../experiment/wonder-woman.png); }
+  background-image: url(images/wonder-woman.png); }
 footer a:nth-of-type(5)::before {
-  background-image: url(../experiment/green-lantern-png.png); }
+  background-image: url(images/green-lantern-png.png); }
 @media only screen and (min-width: 700px) {
   footer a::after {
     position: absolute;
@@ -268,7 +269,7 @@ footer a:nth-of-type(5)::before {
   footer a:nth-of-type(2)::after {
     content: "You’re going to change the world."; }
   footer a:nth-of-type(3)::after {
-    content: "I'm team Marvel!"; }
+    content: "I shouldn't be here!"; }
   footer a:nth-of-type(4)::after {
     content: "I will fight for those who cannot fight for themselves."; }
   footer a:nth-of-type(5)::after {
@@ -359,45 +360,33 @@ footer a:nth-of-type(5)::before {
 	 Change the image background here so they can be different
 ******************************************************************/
 .view-css {
-  background-image: url(../experiment/comic.jpg);
+  background-image: url(images/comic.jpg);
   background-size: cover; }
 
 .css-resources {
-  background-image: url(../experiment/thor-4.png);
+  background-image: url(images/thor-4.png);
   background-size: cover; }
 
 .zen-faq {
-  background-image: url(../experiment/iron-man.png);
+  background-image: url(images/iron-man.png);
   background-size: cover; }
 
 .zen-submit {
-  background-image: url(../experiment/spiderman-small.png);
+  background-image: url(images/spiderman-small.png);
   background-size: cover; }
 
 .zen-translations {
-  background-image: url(../experiment/marvel-2.jpg);
+  background-image: url(images/marvel-2.jpg);
   background-size: cover; }
 
 @media only screen and (min-width: 768px) {
-  .view-css {
-    background-image: url(../experiment/comic.jpg);
-    background-size: cover; }
-
   .css-resources {
-    background-image: url(../experiment/thor-3.png);
-    background-size: cover; }
-
-  .zen-faq {
-    background-image: url(../experiment/iron-man.png);
+    background-image: url(images/thor-3.png);
     background-size: cover; }
 
   .zen-submit {
-    background-image: url(../experiment/spidermanbio_portada.jpg);
-    background-size: 100% 100%; }
-
-  .zen-translations {
-    background-image: url(../experiment/marvel-2.jpg);
-    background-size: cover; } }
+    background-image: url(images/spidermanbio_portada.jpg);
+    background-size: 100% 100%; } }
 /******************************************************************
 		    End Styles for changing background on hover
 ******************************************************************/

@@ -27,23 +27,23 @@ footer {
 	}
 
 	a:nth-of-type(1)::before {
-		background-image: url(../experiment/batman.png);
+		background-image: url(images/batman.png);
 	}
 
 	a:nth-of-type(2)::before {
-		background-image: url(../experiment/superman-best.png);
+		background-image: url(images/superman-best.png);
 	}
 
 	a:nth-of-type(3)::before {
-		background-image: url(../experiment/spiderman-png.png);
+		background-image: url(images/spiderman-png.png);
 	}
 
 	a:nth-of-type(4)::before {
-		background-image: url(../experiment/wonder-woman.png);
+		background-image: url(images/wonder-woman.png);
 	}
 
 	a:nth-of-type(5)::before {
-		background-image: url(../experiment/green-lantern-png.png);
+		background-image: url(images/green-lantern-png.png);
 	}
 
 	@include MQ(700px){
@@ -78,7 +78,7 @@ footer {
 		}
 	
 		a:nth-of-type(3)::after {
-			content: "I'm team Marvel!";
+			content: "I shouldn't be here!";
 		}
 	
 		a:nth-of-type(4)::after {
@@ -197,73 +197,52 @@ footer {
 // View This Design’s 
 
 .view-css {
-	background-image: url(../experiment/comic.jpg); //Change background image here
+	background-image: url(images/comic.jpg); //Change background image here
 	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 }
 
 // CSS Resources 
 
 .css-resources {
-	background-image: url(../experiment/thor-4.png); //Change background image here
+	background-image: url(images/thor-4.png); //Change background image here
 	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 }
 
 // FAQ
 
 .zen-faq {
-	background-image: url(../experiment/iron-man.png); //Change background image here
+	background-image: url(images/iron-man.png); //Change background image here
 	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 }
 
 // Submit a Design 
 
 .zen-submit {
-	background-image: url(../experiment/spiderman-small.png); //Change background image here
+	background-image: url(images/spiderman-small.png); //Change background image here
 	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 }
 
 // Translations
 
 .zen-translations {
-	background-image: url(../experiment/marvel-2.jpg); //Change background image here
+	background-image: url(images/marvel-2.jpg); //Change background image here
 	background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 }
 
 @include MQ(S){
 
-	// View This Design’s 
-
-	.view-css {
-		background-image: url(../experiment/comic.jpg); //Change background image here
-		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
-	}
-
 	// CSS Resources 
 
 	.css-resources {
-		background-image: url(../experiment/thor-3.png); //Change background image here
-		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
-	}
-
-	// FAQ
-
-	.zen-faq {
-		background-image: url(../experiment/iron-man.png); //Change background image here
+		background-image: url(images/thor-3.png); //Change background image here
 		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 	}
 
 	// Submit a Design 
 
 	.zen-submit {
-		background-image: url(../experiment/spidermanbio_portada.jpg); //Change background image here
+		background-image: url(images/spidermanbio_portada.jpg); //Change background image here
 		background-size: 100% 100%; // Change according to viewport size. Use Photoshop and MQs
-	}
-
-	// Translations
-
-	.zen-translations {
-		background-image: url(../experiment/marvel-2.jpg); //Change background image here
-		background-size: cover; // Change according to viewport size. Use Photoshop and MQs
 	}
 }
 

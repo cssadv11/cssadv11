@@ -2,7 +2,7 @@
 
 Contributors:
 
-- Frank Quispe
+- Frank Cosme
 - Gabriela Avila
 - Randeep Ranu
 

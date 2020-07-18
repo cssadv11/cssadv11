@@ -180,6 +180,23 @@ nav a {
           border: 47px solid transparent;
           border-right: 47px solid #fff; } }
 /******************************************************************
+	            	Styles for the flash animation
+******************************************************************/
+.intro::before {
+  content: url(../experiment/flash.gif);
+  position: relative;
+  left: -600px;
+  animation: run 3s ease-in 1s infinite; }
+
+@keyframes run {
+  0% {
+    left: -600px; }
+  100% {
+    left: 120%; } }
+/******************************************************************
+	             	End Styles for animation
+******************************************************************/
+/******************************************************************
 		Styles for changing background on hover on footer
 ******************************************************************/
 footer a {
@@ -220,13 +237,13 @@ footer a:hover::before {
 footer a:nth-of-type(1)::before {
   background-image: url(../experiment/batman.png); }
 footer a:nth-of-type(2)::before {
-  background-image: url(../experiment/green-lantern-png.png); }
+  background-image: url(../experiment/wonder-woman.png); }
 footer a:nth-of-type(3)::before {
   background-image: url(../experiment/spiderman-png.png); }
 footer a:nth-of-type(4)::before {
   background-image: url(../experiment/superman-best.png); }
 footer a:nth-of-type(5)::before {
-  background-image: url(../experiment/theflash.png); }
+  background-image: url(../experiment/green-lantern-png.png); }
 
 /******************************************************************
 			Styles for changing background on hover
